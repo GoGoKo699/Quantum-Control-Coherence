@@ -19,10 +19,10 @@ Define
 \mathcal S_U
 &=\{E-F:\Pi_EU\Pi_F\ne0\},\\
 \Gamma_U
-&=\operatorname{span}_{\mathbb Z}\mathcal S_U,\\
+&=\mathrm{span}_{\mathbb Z}\mathcal S_U,\\
 r_U
-&=\operatorname{rank}_{\mathbb Z}\Gamma_U
-=\dim_{\mathbb Q}\operatorname{span}_{\mathbb Q}\mathcal S_U.
+&=\mathrm{rank}_{\mathbb Z}\Gamma_U
+=\dim_{\mathbb Q}\mathrm{span}_{\mathbb Q}\mathcal S_U.
 \end{aligned}
 ```
 
@@ -158,7 +158,7 @@ Let $`|\Phi_d\rangle=d^{-1/2}\sum_{j=1}^d|j,j\rangle`$ and $`|U\rangle=(U\otimes
 
 ```math
 d_{\mathrm{Ch}}(U,W)
-=\sqrt{1-\left|\frac{\operatorname{Tr}(U^\dagger W)}d\right|^2}.
+=\sqrt{1-\left|\frac{\mathrm{Tr}(U^\dagger W)}d\right|^2}.
 ```
 
 This is the trace distance between their normalized pure Choi states, so it obeys the triangle inequality and ignores global phase.
@@ -172,9 +172,9 @@ p_{EF}=\frac{\|\Pi_EU\Pi_F\|_{\mathrm{HS}}^2}{d}.
 These numbers sum to one. Unitarity gives both marginal identities
 
 ```math
-\sum_Fp_{EF}=\frac{\operatorname{rank}\Pi_E}{d},
+\sum_Fp_{EF}=\frac{\mathrm{rank}\Pi_E}{d},
 \qquad
-\sum_Ep_{EF}=\frac{\operatorname{rank}\Pi_F}{d}.
+\sum_Ep_{EF}=\frac{\mathrm{rank}\Pi_F}{d}.
 ```
 
 In particular, the active integer vector has mean zero:
@@ -195,7 +195,7 @@ Every active block has positive weight, and the corresponding vectors span $`\ma
 The orbit's Choi overlap is its characteristic function:
 
 ```math
-\frac{\operatorname{Tr}(U^\dagger U_{\boldsymbol\phi})}{d}
+\frac{\mathrm{Tr}(U^\dagger U_{\boldsymbol\phi})}{d}
 =\sum_{E,F}p_{EF}
 e^{-i\boldsymbol\phi\cdot\boldsymbol v_{EF}}.
 ```
@@ -276,7 +276,7 @@ M&\ge c_{\mathrm{pack}}\eta^{-r}.
 
 The constants depend only on the fixed gate and Hamiltonian, through the chosen integer coordinates.
 
-They also satisfy $`0<c_{\mathrm{pack}}<1`$: indeed, $`\lambda_{\min}(\Sigma)\le\operatorname{Tr}\Sigma\le R^2`$, and hence $`\mu b/2\le1/(8\sqrt{2r})<1`$.
+They also satisfy $`0<c_{\mathrm{pack}}<1`$: indeed, $`\lambda_{\min}(\Sigma)\le\mathrm{Tr}\Sigma\le R^2`$, and hence $`\mu b/2\le1/(8\sqrt{2r})<1`$.
 
 **Proof.** In the cube $`[0,b]^r`$, place a rectangular grid with coordinate spacing $`h=2\eta/\mu`$. The assumption on $`\eta`$ ensures $`h\le b/2`$. Differences between cube points have norm at most $`b\sqrt r=1/(4R)`$, so the local metric bound applies. Two grid points are at Choi distance at least $`\mu h=2\eta`$.
 
@@ -293,6 +293,6 @@ The proof requires neither a torus action on the battery nor a bound on the batt
 
 ## 7. Active rank and spectators
 
-For $`H=\operatorname{diag}(0,1,\sqrt2)`$, a nontrivial rotation confined to the first two energies has $`r_U=1`$. A fully supported qutrit Fourier gate has $`r_U=2`$. With $`H=\operatorname{diag}(0,1,2)`$, that Fourier gate instead has $`r_U=1`$.
+For $`H=\mathrm{diag}(0,1,\sqrt2)`$, a nontrivial rotation confined to the first two energies has $`r_U=1`$. A fully supported qutrit Fourier gate has $`r_U=2`$. With $`H=\mathrm{diag}(0,1,2)`$, that Fourier gate instead has $`r_U=1`$.
 
 These are statements about a fixed exact spectrum and a fixed gate. Their asymptotic resource consequences follow from the converse and construction. Neither the packing constants nor the required actual times are asserted to be uniform as a rational relation or an active matrix block changes.

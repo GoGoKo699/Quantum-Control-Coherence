@@ -3,7 +3,7 @@
 Fix a finite-dimensional system Hamiltonian $`H=\sum_E E\Pi_E`$ and a target unitary $`U`$. The implementation is a unitary $`V`$ on the system and a battery, with $`[V,H+H_B]=0`$. Its induced channel is
 
 ```math
-\mathcal E_\beta(\rho)=\operatorname{Tr}_B V(\rho\otimes\beta)V^\dagger.
+\mathcal E_\beta(\rho)=\mathrm{Tr}_B V(\rho\otimes\beta)V^\dagger.
 ```
 
 This construction supplies a finite battery with nonnegative energies. It implements every fixed $`H,U`$ with both worst-case reference-assisted infidelity and diamond distance of order $`L^{-2}`$, using $`O_{H,U}(L^{r_U})`$ battery levels and mean energy $`O_{H,U}(L)`$. Constants may depend on the fixed gate and spectrum. All logarithms are base two.
@@ -15,9 +15,9 @@ The conserving shift construction follows the reference-frame approach developed
 Define the active transition group and its rank by
 
 ```math
-\Gamma_U=\operatorname{span}_{\mathbb Z}
+\Gamma_U=\mathrm{span}_{\mathbb Z}
 \{E-F:\Pi_EU\Pi_F\ne0\},
-\qquad r=r_U=\operatorname{rank}_{\mathbb Z}\Gamma_U.
+\qquad r=r_U=\mathrm{rank}_{\mathbb Z}\Gamma_U.
 ```
 
 There are fixed, finite nonnegative constants $`A_{\mathrm{iso}},B_{\mathrm{ch}}`$ and an integer $`K\ge0`$ such that, for each integer $`L\ge1`$, a finite pure battery and a conserving unitary satisfy
@@ -94,7 +94,7 @@ then its coherence, dimension, and mean energy are
 \begin{aligned}
 C(\beta_L,H_B)&=rH(p_L)\le r\log L,\\
 d_B&=(L+2K+2)^r,\\
-\operatorname{Tr}(\beta_LH_B)
+\mathrm{Tr}(\beta_LH_B)
 &=\left(K+\frac{L+1}{2}\right)\sum_{a=1}^{r}\omega_a.
 \end{aligned}
 ```
@@ -107,7 +107,7 @@ For a component $`c`$ and integer vector $`q`$, define
 
 ```math
 \mathcal K_{c,q}
-=\operatorname{span}\{
+=\mathrm{span}\{
 |i,q-s_i\rangle:
 i\in c,\ q-s_i\in\Omega_L
 \}.
@@ -204,7 +204,7 @@ The triangle inequality gives
 This operator norm is unchanged by tensoring with an arbitrary reference. For a pure input on system and reference, write $`|\Psi\rangle`$ and $`|\Phi\rangle`$ for the actual and ideal purified outputs. Their norm difference is at most $`\eta_L`$, so
 
 ```math
-\operatorname{Re}\langle\Phi|\Psi\rangle
+\mathrm{Re}\langle\Phi|\Psi\rangle
 \ge1-\frac{\eta_L^2}{2}.
 ```
 
@@ -272,7 +272,7 @@ For either error metric $`e\in\{\epsilon_F,\delta\}`$, use the corresponding len
 \begin{aligned}
 C(\beta_{L_e},H_B)&\le\frac r2\log(1/\varepsilon)+O_{H,U}(1),\\
 \log d_B&\le\frac r2\log(1/\varepsilon)+O_{H,U}(1),\\
-\operatorname{Tr}(\beta_{L_e}H_B)&=O_{H,U}(\varepsilon^{-1/2}).
+\mathrm{Tr}(\beta_{L_e}H_B)&=O_{H,U}(\varepsilon^{-1/2}).
 \end{aligned}
 ```
 
