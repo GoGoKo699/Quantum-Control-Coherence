@@ -3,10 +3,10 @@
 This project studies the initial entropic energy coherence needed to implement one fixed finite-dimensional unitary under exact additive energy conservation. For the system Hamiltonian $`H=\sum_E E\Pi_E`$ and target $`U`$, the invariant used throughout is
 
 ```math
-\Gamma_U=\operatorname{span}_{\mathbb Z}
+\Gamma_U=\mathrm{span}_{\mathbb Z}
 \{E-F:\Pi_EU\Pi_F\ne0\},
 \qquad
-r_U=\operatorname{rank}_{\mathbb Z}\Gamma_U.
+r_U=\mathrm{rank}_{\mathbb Z}\Gamma_U.
 ```
 
 The result combines established information-theoretic and reference-frame methods with an explicit identification of this active transition group and a finite conserving construction. The theorem concerns arbitrary mixed finite batteries. It charges the coherence initially present, not the amount consumed in one use. The main error $`\epsilon_F`$ is worst-case reference-assisted infidelity with squared Uhlmann fidelity; half-diamond error $`\delta`$ is treated separately.

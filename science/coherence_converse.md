@@ -180,7 +180,7 @@ The normalized ideal Choi state $`|W\rangle\langle W|`$ is pure. Testing the act
 \begin{aligned}
 \mathbb E_W[d_{\mathrm{Ch}}(W,\widehat W)^2]
 &=1-\langle W|
-(\mathcal M_W\otimes\operatorname{id})
+(\mathcal M_W\otimes\mathrm{id})
 (|\Phi_d\rangle\langle\Phi_d|)
 |W\rangle\\
 &\le\frac12\|\mathcal M_W-\mathcal W\|_\diamond\\

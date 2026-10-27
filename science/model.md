@@ -24,7 +24,7 @@ The induced system channel is
 
 ```math
 \mathcal E_\beta(X)
-=\operatorname{Tr}_B\!\left[V(X\otimes\beta)V^\dagger\right].
+=\mathrm{Tr}_B\!\left[V(X\otimes\beta)V^\dagger\right].
 ```
 
 The word battery denotes the auxiliary quantum controller in this model. Its energy coherences provide a phase reference as well as allowing energy exchange. The input is a product $`\rho_{SA}\otimes\beta_B`$; the battery is independent of the unknown system state and any external reference $`A`$. No initial return condition is imposed on the battery. A scalar shift of $`H_B`$ changes neither conservation nor coherence, so the optimization can require $`H_B\ge0`$ without loss.
@@ -63,8 +63,8 @@ The reference-assisted worst-case infidelity and half-diamond error are
 \begin{aligned}
 \epsilon_F(\mathcal E,\mathcal U)
 &=1-\inf_{\rho_{SA}}
-F\!\left((\mathcal E\otimes\operatorname{id}_A)(\rho_{SA}),
-         (\mathcal U\otimes\operatorname{id}_A)(\rho_{SA})\right),\\
+F\!\left((\mathcal E\otimes\mathrm{id}_A)(\rho_{SA}),
+         (\mathcal U\otimes\mathrm{id}_A)(\rho_{SA})\right),\\
 \delta(\mathcal E,\mathcal U)
 &=\frac12\|\mathcal E-\mathcal U\|_\diamond.
 \end{aligned}
@@ -84,11 +84,11 @@ An energy gap is active when the corresponding gate block is nonzero. Define
 
 ```math
 \Gamma_U
-=\operatorname{span}_{\mathbb Z}
+=\mathrm{span}_{\mathbb Z}
 \{E-F:\Pi_EU\Pi_F\ne0\},
 \qquad
 r_U
-=\dim_{\mathbb Q}\operatorname{span}_{\mathbb Q}\Gamma_U.
+=\dim_{\mathbb Q}\mathrm{span}_{\mathbb Q}\Gamma_U.
 ```
 
 The integer span is a finitely generated torsion-free group. It has a basis of $`r_U`$ rationally independent real frequencies. In particular,
@@ -155,7 +155,7 @@ If $`r_U=0`$, use $`V=U`$ and a one-dimensional battery. Then both errors vanish
 The same finite family realizing the upper bounds can have
 
 ```math
-\operatorname{Tr}(H_B\beta)=O_{H,U}(\varepsilon^{-1/2}),
+\mathrm{Tr}(H_B\beta)=O_{H,U}(\varepsilon^{-1/2}),
 \qquad H_B\ge0.
 ```
 

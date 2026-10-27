@@ -9,7 +9,7 @@ For a fixed system Hamiltonian and target unitary, the answer is set by the **ra
 Let $`H=\sum_E E\Pi_E`$ be a fixed finite-dimensional Hamiltonian and $`U`$ a fixed target unitary. The controller, called a battery, begins in an arbitrary state $`\beta`$ independent of the unknown system input. A joint unitary $`V`$ obeys exact additive energy conservation, $`[V,H+H_B]=0`$. Define
 
 ```math
-r_U=\dim_{\mathbb Q}\operatorname{span}_{\mathbb Q}
+r_U=\dim_{\mathbb Q}\mathrm{span}_{\mathbb Q}
 \{E-F:\Pi_EU\Pi_F\ne0\}.
 ```
 

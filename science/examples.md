@@ -72,7 +72,7 @@ Both reduced-channel errors are $`O(L^{-2})`$. The second controller stores two 
 Keep the irrational spectrum but replace the target:
 
 ```math
-H=\operatorname{diag}(0,1,\sqrt2),
+H=\mathrm{diag}(0,1,\sqrt2),
 \qquad
 U=U_{\mathrm H}\oplus1.
 ```
@@ -88,7 +88,7 @@ The distinction is useful for selective gates. The rank of the whole spectrum wo
 Let
 
 ```math
-H=\operatorname{diag}(0,0,1,\sqrt2).
+H=\mathrm{diag}(0,0,1,\sqrt2).
 ```
 
 A unitary acting arbitrarily on the first two states and leaving the other levels unchanged commutes with $`H`$. It has $`r_U=0`$ and needs no battery coherence. The amplitudes inside the degenerate energy-zero space may be complex and fully mixed by the gate.
@@ -102,7 +102,7 @@ Battery degeneracy also cannot supply missing phase information at zero cost. Ti
 For the qubit bit flip,
 
 ```math
-H=\operatorname{diag}(0,1),\qquad
+H=\mathrm{diag}(0,1),\qquad
 U=X=\begin{pmatrix}0&1\\1&0\end{pmatrix},
 ```
 
@@ -116,7 +116,7 @@ U_t=e^{-itH}Xe^{itH}
 Shifting $`t`$ by $`\pi`$ changes the matrix sign and hence leaves its channel unchanged. This finite identification does not reduce the local orbit dimension: $`r_U=1`$. Indeed,
 
 ```math
-\frac12\operatorname{Tr}(X^\dagger U_t)=\cos t,
+\frac12\mathrm{Tr}(X^\dagger U_t)=\cos t,
 \qquad
 d_{\mathrm{Ch}}(X,U_t)^2=\sin^2t.
 ```
@@ -128,20 +128,20 @@ The distance is linear in $`|t|`$ near zero. The converse needs a small local pa
 The rank alone does not supply a uniform finite-error lower bound as a gate approaches an energy-preserving one. For
 
 ```math
-U_\theta=e^{-i\theta X},\qquad H=\operatorname{diag}(0,1),
+U_\theta=e^{-i\theta X},\qquad H=\mathrm{diag}(0,1),
 ```
 
 every fixed $`0<|\theta|<\pi/2`$ has rank one. However, implementing the identity gives
 
 ```math
-\epsilon_F(\operatorname{id},\mathcal U_\theta)=\sin^2\theta,
+\epsilon_F(\mathrm{id},\mathcal U_\theta)=\sin^2\theta,
 \qquad
-\delta(\operatorname{id},\mathcal U_\theta)=|\sin\theta|.
+\delta(\mathrm{id},\mathcal U_\theta)=|\sin\theta|.
 ```
 
 If the target angle is allowed to shrink with the error tolerance, a one-dimensional controller can already meet that tolerance. The theorem fixes $`\theta`$ before taking $`\varepsilon\downarrow0`$. The local packing constants record how strongly the gate responds to each phase coordinate.
 
-Exact rational relations have a similar order-of-limits issue. For $`H=\operatorname{diag}(0,1,p/q)`$ with coprime positive integers $`p,q`$, a fully supported gate has rank one and may use lattice spacing $`1/q`$ with charges $`0,q,p`$. The required padding can grow with $`p,q`$. Taking rational approximants with increasing denominators while decreasing the error is a joint limit and is not described by a fixed-spectrum exponent alone.
+Exact rational relations have a similar order-of-limits issue. For $`H=\mathrm{diag}(0,1,p/q)`$ with coprime positive integers $`p,q`$, a fully supported gate has rank one and may use lattice spacing $`1/q`$ with charges $`0,q,p`$. The required padding can grow with $`p,q`$. Taking rational approximants with increasing denominators while decreasing the error is a joint limit and is not described by a fixed-spectrum exponent alone.
 
 ## 7. Generic fixed systems
 

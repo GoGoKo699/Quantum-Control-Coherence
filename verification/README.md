@@ -68,7 +68,7 @@ For a system density matrix $`\rho`$, the script evaluates the fidelity for a pu
 
 ```math
 F_\rho=\sum_b
-\left|\operatorname{Tr}\left(\rho U^\dagger K_b\right)\right|^2,
+\left|\mathrm{Tr}\left(\rho U^\dagger K_b\right)\right|^2,
 ```
 
 where $`K_b`$ are the directly constructed Kraus operators. A mixed $`\rho`$ therefore tests an entangled pure input, not merely a mixed unreferenced input. The reported maximum infidelity over the finite probe set is a **lower bound** on the true worst-case infidelity. The universal upper bound comes from the analytical isometry estimate, not from that maximum.
