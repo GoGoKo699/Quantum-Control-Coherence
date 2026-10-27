@@ -1,0 +1,1968 @@
+{
+  "schema_version": 1,
+  "status": "passed",
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  },
+  "seed": 20261027,
+  "numerical_tolerance": 2e-10,
+  "scope": {
+    "exact": "integer energy coordinates, active rational ranks, dimensions and sector labels",
+    "floating": "unitarity, channel equality, fidelity, entropy and finite bound evaluations",
+    "not_computed": "exact diamond norm or a certified optimization of worst-case infidelity",
+    "asymptotics": "scaling observations illustrate the analytic proof; finite checks do not prove it"
+  },
+  "summary": {
+    "cases": 8,
+    "explicit_finite_unitaries": 24,
+    "exact_conservation_violations": 0,
+    "maximum_channel_kernel_discrepancy": 2.220446049250313e-16,
+    "maximum_unitarity_defect": 4.440892098500626e-16,
+    "maximum_reference_purification_discrepancy": 2.4424906541753444e-15
+  },
+  "cases": [
+    {
+      "name": "qubit_hadamard",
+      "system_dimension": 2,
+      "active_rank": 1,
+      "declared_exact_independent_energy_basis": [
+        "1"
+      ],
+      "system_gap_rank": 1,
+      "exact_system_charges": [
+        [
+          0
+        ],
+        [
+          1
+        ]
+      ],
+      "exact_battery_generators": [
+        [
+          1
+        ]
+      ],
+      "integer_shifts": [
+        [
+          0
+        ],
+        [
+          1
+        ]
+      ],
+      "components": [
+        0,
+        0
+      ],
+      "battery_frequencies": [
+        1.0
+      ],
+      "finite_instances": [
+        {
+          "L": 2,
+          "padding_K": 1,
+          "battery_dimension": 6,
+          "coherence_bits": 1.0,
+          "coherence_upper_bits": 1.0,
+          "mean_energy": 2.5,
+          "A": 4.442882938158366,
+          "B": 39.478417604357425,
+          "coefficient_full_diamond_upper": 2.9999999999999996,
+          "analytic_full_diamond_upper": 4.386490844928603,
+          "analytic_infidelity_upper": 1.0,
+          "isometry_error_squared": 0.5000000000000001,
+          "total_dimension": 12,
+          "complete_refined_blocks": 5,
+          "identity_boundary_blocks": 2,
+          "physical_total_energy_sectors": 7,
+          "sectors_with_multiple_refined_blocks": 0,
+          "global_unitarity_max_entry_defect": 2.220446049250313e-16,
+          "exact_integer_conservation_violations": 0,
+          "floating_commutator_max_entry": 0.0,
+          "channel_kernel_max_entry_discrepancy": 0.0,
+          "isometry_shift_max_entry_discrepancy": 0.0,
+          "choi_min_eigenvalue": -8.870976056594287e-18,
+          "choi_half_trace_distance_lower_witness": 0.4045084971874735,
+          "reference_probe_count": 27,
+          "sample_max_reference_infidelity": 0.3750000000000001,
+          "explicit_purification_fidelity_discrepancy": 6.661338147750939e-16,
+          "direct_mean_energy": 2.5,
+          "direct_coherence_bits": 1.0
+        },
+        {
+          "L": 4,
+          "padding_K": 1,
+          "battery_dimension": 8,
+          "coherence_bits": 1.8504896251021616,
+          "coherence_upper_bits": 2.0,
+          "mean_energy": 3.5,
+          "A": 4.442882938158366,
+          "B": 39.478417604357425,
+          "coefficient_full_diamond_upper": 1.3167184270002514,
+          "analytic_full_diamond_upper": 1.579136704174297,
+          "analytic_infidelity_upper": 0.7895683520871486,
+          "isometry_error_squared": 0.1909830056250527,
+          "total_dimension": 16,
+          "complete_refined_blocks": 7,
+          "identity_boundary_blocks": 2,
+          "physical_total_energy_sectors": 9,
+          "sectors_with_multiple_refined_blocks": 0,
+          "global_unitarity_max_entry_defect": 2.220446049250313e-16,
+          "exact_integer_conservation_violations": 0,
+          "floating_commutator_max_entry": 0.0,
+          "channel_kernel_max_entry_discrepancy": 5.551115123125783e-17,
+          "isometry_shift_max_entry_discrepancy": 0.0,
+          "choi_min_eigenvalue": 5.950715649404553e-17,
+          "choi_half_trace_distance_lower_witness": 0.18696772938109668,
+          "reference_probe_count": 27,
+          "sample_max_reference_infidelity": 0.16458980337503182,
+          "explicit_purification_fidelity_discrepancy": 2.220446049250313e-16,
+          "direct_mean_energy": 3.5000000000000004,
+          "direct_coherence_bits": 1.8504896251021616
+        },
+        {
+          "L": 7,
+          "padding_K": 1,
+          "battery_dimension": 11,
+          "coherence_bits": 2.550438018346428,
+          "coherence_upper_bits": 2.807354922057604,
+          "mean_energy": 5.0,
+          "A": 4.442882938158366,
+          "B": 39.478417604357425,
+          "coefficient_full_diamond_upper": 0.5607634364166239,
+          "analytic_full_diamond_upper": 0.6168502750680848,
+          "analytic_infidelity_upper": 0.30842513753404244,
+          "isometry_error_squared": 0.07612046748871384,
+          "total_dimension": 22,
+          "complete_refined_blocks": 10,
+          "identity_boundary_blocks": 2,
+          "physical_total_energy_sectors": 12,
+          "sectors_with_multiple_refined_blocks": 0,
+          "global_unitarity_max_entry_defect": 2.220446049250313e-16,
+          "exact_integer_conservation_violations": 0,
+          "floating_commutator_max_entry": 0.0,
+          "channel_kernel_max_entry_discrepancy": 5.551115123125783e-17,
+          "isometry_shift_max_entry_discrepancy": 0.0,
+          "choi_min_eigenvalue": 3.144041352302073e-17,
+          "choi_half_trace_distance_lower_witness": 0.08178291096243068,
+          "reference_probe_count": 27,
+          "sample_max_reference_infidelity": 0.07009542955207837,
+          "explicit_purification_fidelity_discrepancy": 4.440892098500626e-16,
+          "direct_mean_energy": 5.0,
+          "direct_coherence_bits": 2.550438018346428
+        }
+      ],
+      "scaling": {
+        "method": "overlap kernel and exact resource formulas; no full unitary at these sizes",
+        "rows": [
+          {
+            "L": 8,
+            "padding_K": 1,
+            "battery_dimension": 12,
+            "coherence_bits": 2.722420921363933,
+            "coherence_upper_bits": 3.0,
+            "mean_energy": 5.5,
+            "A": 4.442882938158366,
+            "B": 39.478417604357425,
+            "coefficient_full_diamond_upper": 0.44919001186171864,
+            "analytic_full_diamond_upper": 0.48738787165873365,
+            "analytic_infidelity_upper": 0.24369393582936685,
+            "isometry_error_squared": 0.06030737921409191,
+            "maximally_entangled_probe_infidelity": 0.05614875148271503
+          },
+          {
+            "L": 16,
+            "padding_K": 1,
+            "battery_dimension": 20,
+            "coherence_bits": 3.6440597216398496,
+            "coherence_upper_bits": 4.0,
+            "mean_energy": 9.5,
+            "A": 4.442882938158366,
+            "B": 39.478417604357425,
+            "coefficient_full_diamond_upper": 0.1316631500602938,
+            "analytic_full_diamond_upper": 0.13660352112234403,
+            "analytic_infidelity_upper": 0.06830176056117203,
+            "isometry_error_squared": 0.017026900316098548,
+            "maximally_entangled_probe_infidelity": 0.016457893757536923
+          },
+          {
+            "L": 32,
+            "padding_K": 1,
+            "battery_dimension": 36,
+            "coherence_bits": 4.601602488522017,
+            "coherence_upper_bits": 5.0,
+            "mean_energy": 17.5,
+            "A": 4.442882938158366,
+            "B": 39.478417604357425,
+            "coefficient_full_diamond_upper": 0.035635997210490926,
+            "analytic_full_diamond_upper": 0.03625199045395539,
+            "analytic_infidelity_upper": 0.0181259952269777,
+            "isometry_error_squared": 0.004528077426915637,
+            "maximally_entangled_probe_infidelity": 0.004454499651311727
+          },
+          {
+            "L": 64,
+            "padding_K": 1,
+            "battery_dimension": 68,
+            "coherence_bits": 5.57966013996332,
+            "coherence_upper_bits": 6.0,
+            "mean_energy": 33.5,
+            "A": 4.442882938158366,
+            "B": 39.478417604357425,
+            "coefficient_full_diamond_upper": 0.009267636948701806,
+            "analytic_full_diamond_upper": 0.009344004166711816,
+            "analytic_infidelity_upper": 0.004672002083355909,
+            "isometry_error_squared": 0.0011677731676740244,
+            "maximally_entangled_probe_infidelity": 0.0011584546185882116
+          },
+          {
+            "L": 128,
+            "padding_K": 1,
+            "battery_dimension": 132,
+            "coherence_bits": 6.568530598751628,
+            "coherence_upper_bits": 7.0,
+            "mean_energy": 65.5,
+            "A": 4.442882938158366,
+            "B": 39.478417604357425,
+            "coefficient_full_diamond_upper": 0.0023628720083921357,
+            "analytic_full_diamond_upper": 0.002372358488333479,
+            "analytic_infidelity_upper": 0.0011861792441667397,
+            "isometry_error_squared": 0.00029653015486086787,
+            "maximally_entangled_probe_infidelity": 0.00029535900104937785
+          },
+          {
+            "L": 256,
+            "padding_K": 1,
+            "battery_dimension": 260,
+            "coherence_bits": 7.56292930397316,
+            "coherence_upper_bits": 8.0,
+            "mean_energy": 129.5,
+            "A": 4.442882938158366,
+            "B": 39.478417604357425,
+            "coefficient_full_diamond_upper": 0.000596532668027061,
+            "analytic_full_diamond_upper": 0.0005977140850634744,
+            "analytic_infidelity_upper": 0.0002988570425317373,
+            "isometry_error_squared": 7.471333026789668e-05,
+            "maximally_entangled_probe_infidelity": 7.456658350357692e-05
+          }
+        ],
+        "last_interval_observations_not_theorem_certificates": {
+          "coherence_increment_per_log2_L": 0.9943987052215322,
+          "log_dimension_slope": 0.9779736936700011,
+          "log_mean_energy_slope": 0.9833852861491038,
+          "log_coefficient_diamond_upper_slope": -1.9858684320261633,
+          "log_choi_probe_infidelity_slope": -1.9858684320241664
+        }
+      }
+    },
+    {
+      "name": "qubit_pauli_x",
+      "system_dimension": 2,
+      "active_rank": 1,
+      "declared_exact_independent_energy_basis": [
+        "1"
+      ],
+      "system_gap_rank": 1,
+      "exact_system_charges": [
+        [
+          0
+        ],
+        [
+          1
+        ]
+      ],
+      "exact_battery_generators": [
+        [
+          1
+        ]
+      ],
+      "integer_shifts": [
+        [
+          0
+        ],
+        [
+          1
+        ]
+      ],
+      "components": [
+        0,
+        0
+      ],
+      "battery_frequencies": [
+        1.0
+      ],
+      "finite_projective_stabilizer_check": {
+        "phase_point": [
+          3.141592653589793
+        ],
+        "choi_infidelity": 0.0,
+        "scalar_phase_real": -1.0,
+        "scalar_phase_imag": 0.0
+      },
+      "finite_instances": [
+        {
+          "L": 2,
+          "padding_K": 1,
+          "battery_dimension": 6,
+          "coherence_bits": 1.0,
+          "coherence_upper_bits": 1.0,
+          "mean_energy": 2.5,
+          "A": 6.283185307179586,
+          "B": 39.47841760435743,
+          "coefficient_full_diamond_upper": 2.0,
+          "analytic_full_diamond_upper": 4.386490844928604,
+          "analytic_infidelity_upper": 1.0,
+          "isometry_error_squared": 1.0,
+          "total_dimension": 12,
+          "complete_refined_blocks": 5,
+          "identity_boundary_blocks": 2,
+          "physical_total_energy_sectors": 7,
+          "sectors_with_multiple_refined_blocks": 0,
+          "global_unitarity_max_entry_defect": 0.0,
+          "exact_integer_conservation_violations": 0,
+          "floating_commutator_max_entry": 0.0,
+          "channel_kernel_max_entry_discrepancy": 0.0,
+          "isometry_shift_max_entry_discrepancy": 0.0,
+          "choi_min_eigenvalue": 0.0,
+          "choi_half_trace_distance_lower_witness": 0.4999999999999999,
+          "reference_probe_count": 27,
+          "sample_max_reference_infidelity": 0.5,
+          "explicit_purification_fidelity_discrepancy": 1.1102230246251565e-16,
+          "direct_mean_energy": 2.5,
+          "direct_coherence_bits": 1.0
+        },
+        {
+          "L": 4,
+          "padding_K": 1,
+          "battery_dimension": 8,
+          "coherence_bits": 1.8504896251021616,
+          "coherence_upper_bits": 2.0,
+          "mean_energy": 3.5,
+          "A": 6.283185307179586,
+          "B": 39.47841760435743,
+          "coefficient_full_diamond_upper": 1.1055728090000838,
+          "analytic_full_diamond_upper": 1.5791367041742972,
+          "analytic_infidelity_upper": 1.0,
+          "isometry_error_squared": 0.381966011250105,
+          "total_dimension": 16,
+          "complete_refined_blocks": 7,
+          "identity_boundary_blocks": 2,
+          "physical_total_energy_sectors": 9,
+          "sectors_with_multiple_refined_blocks": 0,
+          "global_unitarity_max_entry_defect": 0.0,
+          "exact_integer_conservation_violations": 0,
+          "floating_commutator_max_entry": 0.0,
+          "channel_kernel_max_entry_discrepancy": 2.220446049250313e-16,
+          "isometry_shift_max_entry_discrepancy": 0.0,
+          "choi_min_eigenvalue": 0.0,
+          "choi_half_trace_distance_lower_witness": 0.2763932022500209,
+          "reference_probe_count": 27,
+          "sample_max_reference_infidelity": 0.27639320225002084,
+          "explicit_purification_fidelity_discrepancy": 2.220446049250313e-16,
+          "direct_mean_energy": 3.5000000000000004,
+          "direct_coherence_bits": 1.8504896251021616
+        },
+        {
+          "L": 7,
+          "padding_K": 1,
+          "battery_dimension": 11,
+          "coherence_bits": 2.550438018346428,
+          "coherence_upper_bits": 2.807354922057604,
+          "mean_energy": 5.0,
+          "A": 6.283185307179586,
+          "B": 39.47841760435743,
+          "coefficient_full_diamond_upper": 0.5125631329235418,
+          "analytic_full_diamond_upper": 0.6168502750680849,
+          "analytic_infidelity_upper": 0.6168502750680849,
+          "isometry_error_squared": 0.15224093497742652,
+          "total_dimension": 22,
+          "complete_refined_blocks": 10,
+          "identity_boundary_blocks": 2,
+          "physical_total_energy_sectors": 12,
+          "sectors_with_multiple_refined_blocks": 0,
+          "global_unitarity_max_entry_defect": 0.0,
+          "exact_integer_conservation_violations": 0,
+          "floating_commutator_max_entry": 0.0,
+          "channel_kernel_max_entry_discrepancy": 0.0,
+          "isometry_shift_max_entry_discrepancy": 0.0,
+          "choi_min_eigenvalue": 0.0,
+          "choi_half_trace_distance_lower_witness": 0.12814078323088535,
+          "reference_probe_count": 27,
+          "sample_max_reference_infidelity": 0.1281407832308854,
+          "explicit_purification_fidelity_discrepancy": 9.992007221626409e-16,
+          "direct_mean_energy": 5.0,
+          "direct_coherence_bits": 2.550438018346428
+        }
+      ],
+      "scaling": {
+        "method": "overlap kernel and exact resource formulas; no full unitary at these sizes",
+        "rows": [
+          {
+            "L": 8,
+            "padding_K": 1,
+            "battery_dimension": 12,
+            "coherence_bits": 2.722420921363933,
+            "coherence_upper_bits": 3.0,
+            "mean_energy": 5.5,
+            "A": 6.283185307179586,
+            "B": 39.47841760435743,
+            "coefficient_full_diamond_upper": 0.4159209900107057,
+            "analytic_full_diamond_upper": 0.4873878716587337,
+            "analytic_infidelity_upper": 0.4873878716587337,
+            "isometry_error_squared": 0.12061475842818303,
+            "maximally_entangled_probe_infidelity": 0.10398024750267643
+          },
+          {
+            "L": 16,
+            "padding_K": 1,
+            "battery_dimension": 20,
+            "coherence_bits": 3.6440597216398496,
+            "coherence_upper_bits": 4.0,
+            "mean_energy": 9.5,
+            "A": 6.283185307179586,
+            "B": 39.47841760435743,
+            "coefficient_full_diamond_upper": 0.12711109759180106,
+            "analytic_full_diamond_upper": 0.13660352112234406,
+            "analytic_infidelity_upper": 0.13660352112234406,
+            "isometry_error_squared": 0.03405380063219632,
+            "maximally_entangled_probe_infidelity": 0.031777774397950154
+          },
+          {
+            "L": 32,
+            "padding_K": 1,
+            "battery_dimension": 36,
+            "coherence_bits": 4.601602488522017,
+            "coherence_upper_bits": 5.0,
+            "mean_energy": 17.5,
+            "A": 6.283185307179586,
+            "B": 39.47841760435743,
+            "coefficient_full_diamond_upper": 0.035047375005659465,
+            "analytic_full_diamond_upper": 0.0362519904539554,
+            "analytic_infidelity_upper": 0.0362519904539554,
+            "isometry_error_squared": 0.00905615485383049,
+            "maximally_entangled_probe_infidelity": 0.008761843751414866
+          },
+          {
+            "L": 64,
+            "padding_K": 1,
+            "battery_dimension": 68,
+            "coherence_bits": 5.57966013996332,
+            "coherence_upper_bits": 6.0,
+            "mean_energy": 33.5,
+            "A": 6.283185307179586,
+            "B": 39.47841760435743,
+            "coefficient_full_diamond_upper": 0.009193088556014972,
+            "analytic_full_diamond_upper": 0.009344004166711817,
+            "analytic_infidelity_upper": 0.009344004166711817,
+            "isometry_error_squared": 0.0023355463353471606,
+            "maximally_entangled_probe_infidelity": 0.0022982721390036875
+          },
+          {
+            "L": 128,
+            "padding_K": 1,
+            "battery_dimension": 132,
+            "coherence_bits": 6.568530598751628,
+            "coherence_upper_bits": 7.0,
+            "mean_energy": 65.5,
+            "A": 6.283185307179586,
+            "B": 39.47841760435743,
+            "coefficient_full_diamond_upper": 0.0023535027779009177,
+            "analytic_full_diamond_upper": 0.0023723584883334793,
+            "analytic_infidelity_upper": 0.0023723584883334793,
+            "isometry_error_squared": 0.0005930603097209497,
+            "maximally_entangled_probe_infidelity": 0.0005883756944752294
+          },
+          {
+            "L": 256,
+            "padding_K": 1,
+            "battery_dimension": 260,
+            "coherence_bits": 7.56292930397316,
+            "coherence_upper_bits": 8.0,
+            "mean_energy": 129.5,
+            "A": 6.283185307179586,
+            "B": 39.47841760435743,
+            "coefficient_full_diamond_upper": 0.0005953586939146938,
+            "analytic_full_diamond_upper": 0.0005977140850634746,
+            "analytic_infidelity_upper": 0.0005977140850634746,
+            "isometry_error_squared": 0.0001494266605348571,
+            "maximally_entangled_probe_infidelity": 0.00014883967347867344
+          }
+        ],
+        "last_interval_observations_not_theorem_certificates": {
+          "coherence_increment_per_log2_L": 0.9943987052215322,
+          "log_dimension_slope": 0.9779736936700011,
+          "log_mean_energy_slope": 0.9833852861491038,
+          "log_coefficient_diamond_upper_slope": -1.9829785201403065,
+          "log_choi_probe_infidelity_slope": -1.9829785201403065
+        }
+      }
+    },
+    {
+      "name": "qutrit_fourier_commensurate",
+      "system_dimension": 3,
+      "active_rank": 1,
+      "declared_exact_independent_energy_basis": [
+        "1"
+      ],
+      "system_gap_rank": 1,
+      "exact_system_charges": [
+        [
+          0
+        ],
+        [
+          1
+        ],
+        [
+          2
+        ]
+      ],
+      "exact_battery_generators": [
+        [
+          1
+        ]
+      ],
+      "integer_shifts": [
+        [
+          0
+        ],
+        [
+          1
+        ],
+        [
+          2
+        ]
+      ],
+      "components": [
+        0,
+        0,
+        0
+      ],
+      "battery_frequencies": [
+        1.0
+      ],
+      "finite_instances": [
+        {
+          "L": 2,
+          "padding_K": 2,
+          "battery_dimension": 8,
+          "coherence_bits": 1.0,
+          "coherence_upper_bits": 1.0,
+          "mean_energy": 3.5,
+          "A": 14.510394913873744,
+          "B": 355.30575843921696,
+          "coefficient_full_diamond_upper": 15.333333333333334,
+          "analytic_full_diamond_upper": 39.47841760435744,
+          "analytic_infidelity_upper": 1.0,
+          "isometry_error_squared": 1.3333333333333333,
+          "total_dimension": 24,
+          "complete_refined_blocks": 6,
+          "identity_boundary_blocks": 4,
+          "physical_total_energy_sectors": 10,
+          "sectors_with_multiple_refined_blocks": 0,
+          "global_unitarity_max_entry_defect": 4.440892098500626e-16,
+          "exact_integer_conservation_violations": 0,
+          "floating_commutator_max_entry": 0.0,
+          "channel_kernel_max_entry_discrepancy": 5.721958498152797e-17,
+          "isometry_shift_max_entry_discrepancy": 0.0,
+          "choi_min_eigenvalue": -4.858893166013031e-17,
+          "choi_half_trace_distance_lower_witness": 0.587098020157224,
+          "reference_probe_count": 28,
+          "sample_max_reference_infidelity": 0.5679012345679009,
+          "explicit_purification_fidelity_discrepancy": 3.885780586188048e-16,
+          "direct_mean_energy": 3.5,
+          "direct_coherence_bits": 1.0
+        },
+        {
+          "L": 4,
+          "padding_K": 2,
+          "battery_dimension": 10,
+          "coherence_bits": 1.8504896251021616,
+          "coherence_upper_bits": 2.0,
+          "mean_energy": 4.5,
+          "A": 14.510394913873744,
+          "B": 355.30575843921696,
+          "coefficient_full_diamond_upper": 8.68720382033414,
+          "analytic_full_diamond_upper": 14.212230337568679,
+          "analytic_infidelity_upper": 1.0,
+          "isometry_error_squared": 0.6231682771667644,
+          "total_dimension": 30,
+          "complete_refined_blocks": 8,
+          "identity_boundary_blocks": 4,
+          "physical_total_energy_sectors": 12,
+          "sectors_with_multiple_refined_blocks": 0,
+          "global_unitarity_max_entry_defect": 4.440892098500626e-16,
+          "exact_integer_conservation_violations": 0,
+          "floating_commutator_max_entry": 0.0,
+          "channel_kernel_max_entry_discrepancy": 1.1102230246251565e-16,
+          "isometry_shift_max_entry_discrepancy": 0.0,
+          "choi_min_eigenvalue": -1.0929687370047935e-16,
+          "choi_half_trace_distance_lower_witness": 0.35409562966969405,
+          "reference_probe_count": 28,
+          "sample_max_reference_infidelity": 0.380465735384099,
+          "explicit_purification_fidelity_discrepancy": 3.3306690738754696e-16,
+          "direct_mean_energy": 4.5,
+          "direct_coherence_bits": 1.8504896251021616
+        },
+        {
+          "L": 7,
+          "padding_K": 2,
+          "battery_dimension": 13,
+          "coherence_bits": 2.550438018346428,
+          "coherence_upper_bits": 2.807354922057604,
+          "mean_energy": 6.0,
+          "A": 14.510394913873744,
+          "B": 355.30575843921696,
+          "coefficient_full_diamond_upper": 4.271357746355954,
+          "analytic_full_diamond_upper": 5.551652475612765,
+          "analytic_infidelity_upper": 1.0,
+          "isometry_error_squared": 0.27234833429279826,
+          "total_dimension": 39,
+          "complete_refined_blocks": 11,
+          "identity_boundary_blocks": 4,
+          "physical_total_energy_sectors": 15,
+          "sectors_with_multiple_refined_blocks": 0,
+          "global_unitarity_max_entry_defect": 4.440892098500626e-16,
+          "exact_integer_conservation_violations": 0,
+          "floating_commutator_max_entry": 0.0,
+          "channel_kernel_max_entry_discrepancy": 6.206335383118183e-17,
+          "isometry_shift_max_entry_discrepancy": 0.0,
+          "choi_min_eigenvalue": -7.119990097188896e-17,
+          "choi_half_trace_distance_lower_witness": 0.1838944593647764,
+          "reference_probe_count": 28,
+          "sample_max_reference_infidelity": 0.17672523119925432,
+          "explicit_purification_fidelity_discrepancy": 1.1102230246251565e-15,
+          "direct_mean_energy": 5.999999999999999,
+          "direct_coherence_bits": 2.550438018346428
+        }
+      ],
+      "scaling": {
+        "method": "overlap kernel and exact resource formulas; no full unitary at these sizes",
+        "rows": [
+          {
+            "L": 8,
+            "padding_K": 2,
+            "battery_dimension": 14,
+            "coherence_bits": 2.722420921363933,
+            "coherence_upper_bits": 3.0,
+            "mean_energy": 6.5,
+            "A": 14.510394913873744,
+            "B": 355.30575843921696,
+            "coefficient_full_diamond_upper": 3.504384313984012,
+            "analytic_full_diamond_upper": 4.386490844928605,
+            "analytic_infidelity_upper": 1.0,
+            "isometry_error_squared": 0.2190501689556903,
+            "maximally_entangled_probe_infidelity": 0.1297920116290373
+          },
+          {
+            "L": 16,
+            "padding_K": 2,
+            "battery_dimension": 22,
+            "coherence_bits": 3.6440597216398496,
+            "coherence_upper_bits": 4.0,
+            "mean_energy": 10.5,
+            "A": 14.510394913873744,
+            "B": 355.30575843921696,
+            "coefficient_full_diamond_upper": 1.1116814878484615,
+            "analytic_full_diamond_upper": 1.2294316901010967,
+            "analytic_infidelity_upper": 0.7285521126525019,
+            "isometry_error_squared": 0.06507289961873103,
+            "maximally_entangled_probe_infidelity": 0.04117338843883123
+          },
+          {
+            "L": 32,
+            "padding_K": 2,
+            "battery_dimension": 38,
+            "coherence_bits": 4.601602488522017,
+            "coherence_upper_bits": 5.0,
+            "mean_energy": 18.5,
+            "A": 14.510394913873744,
+            "B": 355.30575843921696,
+            "coefficient_full_diamond_upper": 0.31147156087990163,
+            "analytic_full_diamond_upper": 0.3262679140855987,
+            "analytic_infidelity_upper": 0.1933439490877622,
+            "isometry_error_squared": 0.017719894904440044,
+            "maximally_entangled_probe_infidelity": 0.01153598373629161
+          },
+          {
+            "L": 64,
+            "padding_K": 2,
+            "battery_dimension": 70,
+            "coherence_bits": 5.57966013996332,
+            "coherence_upper_bits": 6.0,
+            "mean_energy": 34.5,
+            "A": 14.510394913873744,
+            "B": 355.30575843921696,
+            "coefficient_full_diamond_upper": 0.08226006470444101,
+            "analytic_full_diamond_upper": 0.08409603750040638,
+            "analytic_infidelity_upper": 0.049834688889129716,
+            "isometry_error_squared": 0.0046213937422361785,
+            "maximally_entangled_probe_infidelity": 0.003046669063125451
+          },
+          {
+            "L": 128,
+            "padding_K": 2,
+            "battery_dimension": 134,
+            "coherence_bits": 6.568530598751628,
+            "coherence_upper_bits": 7.0,
+            "mean_energy": 66.5,
+            "A": 14.510394913873744,
+            "B": 355.30575843921696,
+            "coefficient_full_diamond_upper": 0.021123272819138245,
+            "analytic_full_diamond_upper": 0.02135122639500132,
+            "analytic_infidelity_upper": 0.012652578604445228,
+            "isometry_error_squared": 0.0011798744657808096,
+            "maximally_entangled_probe_infidelity": 0.0007823434377460803
+          },
+          {
+            "L": 256,
+            "padding_K": 2,
+            "battery_dimension": 262,
+            "coherence_bits": 7.56292930397316,
+            "coherence_upper_bits": 8.0,
+            "mean_energy": 130.5,
+            "A": 14.510394913873744,
+            "B": 355.30575843921696,
+            "coefficient_full_diamond_upper": 0.005351052760619831,
+            "analytic_full_diamond_upper": 0.005379426765571272,
+            "analytic_infidelity_upper": 0.0031878084536718656,
+            "isometry_error_squared": 0.0002980706716614195,
+            "maximally_entangled_probe_infidelity": 0.00019818713928154708
+          }
+        ],
+        "last_interval_observations_not_theorem_certificates": {
+          "coherence_increment_per_log2_L": 0.9943987052215322,
+          "log_dimension_slope": 0.967333811079678,
+          "log_mean_energy_slope": 0.972623561068695,
+          "log_coefficient_diamond_upper_slope": -1.9809387228770334,
+          "log_choi_probe_infidelity_slope": -1.9809387228823072
+        }
+      }
+    },
+    {
+      "name": "qutrit_fourier_irrational",
+      "system_dimension": 3,
+      "active_rank": 2,
+      "declared_exact_independent_energy_basis": [
+        "1",
+        "sqrt(2)"
+      ],
+      "system_gap_rank": 2,
+      "exact_system_charges": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "exact_battery_generators": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "integer_shifts": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "components": [
+        0,
+        0,
+        0
+      ],
+      "battery_frequencies": [
+        1.0,
+        1.4142135623730951
+      ],
+      "finite_instances": [
+        {
+          "L": 2,
+          "padding_K": 1,
+          "battery_dimension": 36,
+          "coherence_bits": 2.0,
+          "coherence_upper_bits": 2.0,
+          "mean_energy": 6.035533905932738,
+          "A": 14.510394913873744,
+          "B": 381.6247035087884,
+          "coefficient_full_diamond_upper": 15.0,
+          "analytic_full_diamond_upper": 42.40274483430982,
+          "analytic_infidelity_upper": 1.0,
+          "isometry_error_squared": 1.1666666666666665,
+          "total_dimension": 108,
+          "complete_refined_blocks": 25,
+          "identity_boundary_blocks": 23,
+          "physical_total_energy_sectors": 48,
+          "sectors_with_multiple_refined_blocks": 0,
+          "global_unitarity_max_entry_defect": 4.440892098500626e-16,
+          "exact_integer_conservation_violations": 0,
+          "floating_commutator_max_entry": 0.0,
+          "channel_kernel_max_entry_discrepancy": 5.594315114139762e-17,
+          "isometry_shift_max_entry_discrepancy": 0.0,
+          "choi_min_eigenvalue": -5.4286728630414283e-17,
+          "choi_half_trace_distance_lower_witness": 0.5766874113977862,
+          "reference_probe_count": 28,
+          "sample_max_reference_infidelity": 0.5683828162846656,
+          "explicit_purification_fidelity_discrepancy": 1.1102230246251565e-15,
+          "direct_mean_energy": 6.035533905932738,
+          "direct_coherence_bits": 2.0
+        },
+        {
+          "L": 4,
+          "padding_K": 1,
+          "battery_dimension": 64,
+          "coherence_bits": 3.7009792502043233,
+          "coherence_upper_bits": 4.0,
+          "mean_energy": 8.449747468305832,
+          "A": 14.510394913873744,
+          "B": 381.6247035087884,
+          "coefficient_full_diamond_upper": 7.312668221084148,
+          "analytic_full_diamond_upper": 15.264988140351536,
+          "analytic_infidelity_upper": 1.0,
+          "isometry_error_squared": 0.48497167604175373,
+          "total_dimension": 192,
+          "complete_refined_blocks": 49,
+          "identity_boundary_blocks": 31,
+          "physical_total_energy_sectors": 80,
+          "sectors_with_multiple_refined_blocks": 0,
+          "global_unitarity_max_entry_defect": 2.715409158607844e-16,
+          "exact_integer_conservation_violations": 0,
+          "floating_commutator_max_entry": 0.0,
+          "channel_kernel_max_entry_discrepancy": 1.1443916996305594e-16,
+          "isometry_shift_max_entry_discrepancy": 0.0,
+          "choi_min_eigenvalue": -1.582324367928538e-17,
+          "choi_half_trace_distance_lower_witness": 0.2928956170239294,
+          "reference_probe_count": 28,
+          "sample_max_reference_infidelity": 0.2972180809215097,
+          "explicit_purification_fidelity_discrepancy": 4.440892098500626e-16,
+          "direct_mean_energy": 8.449747468305837,
+          "direct_coherence_bits": 3.7009792502043233
+        },
+        {
+          "L": 7,
+          "padding_K": 1,
+          "battery_dimension": 121,
+          "coherence_bits": 5.100876036692856,
+          "coherence_upper_bits": 5.614709844115208,
+          "mean_energy": 12.071067811865476,
+          "A": 14.510394913873744,
+          "B": 381.6247035087884,
+          "coefficient_full_diamond_upper": 3.2622764290909054,
+          "analytic_full_diamond_upper": 5.962885992324819,
+          "analytic_infidelity_upper": 1.0,
+          "isometry_error_squared": 0.199125029589435,
+          "total_dimension": 363,
+          "complete_refined_blocks": 100,
+          "identity_boundary_blocks": 43,
+          "physical_total_energy_sectors": 143,
+          "sectors_with_multiple_refined_blocks": 0,
+          "global_unitarity_max_entry_defect": 2.3714374201337736e-16,
+          "exact_integer_conservation_violations": 0,
+          "floating_commutator_max_entry": 0.0,
+          "channel_kernel_max_entry_discrepancy": 1.2412670766236366e-16,
+          "isometry_shift_max_entry_discrepancy": 0.0,
+          "choi_min_eigenvalue": -4.6727204397397747e-17,
+          "choi_half_trace_distance_lower_witness": 0.1343290373910802,
+          "reference_probe_count": 28,
+          "sample_max_reference_infidelity": 0.1572481280896626,
+          "explicit_purification_fidelity_discrepancy": 7.771561172376096e-16,
+          "direct_mean_energy": 12.071067811865476,
+          "direct_coherence_bits": 5.100876036692856
+        }
+      ],
+      "scaling": {
+        "method": "overlap kernel and exact resource formulas; no full unitary at these sizes",
+        "rows": [
+          {
+            "L": 8,
+            "padding_K": 1,
+            "battery_dimension": 144,
+            "coherence_bits": 5.444841842727866,
+            "coherence_upper_bits": 6.0,
+            "mean_energy": 13.278174593052022,
+            "A": 14.510394913873744,
+            "B": 381.6247035087884,
+            "coefficient_full_diamond_upper": 2.6307970343410236,
+            "analytic_full_diamond_upper": 4.711416092701091,
+            "analytic_infidelity_upper": 1.0,
+            "isometry_error_squared": 0.15839502457912902,
+            "maximally_entangled_probe_infidelity": 0.09743692719781483
+          },
+          {
+            "L": 16,
+            "padding_K": 1,
+            "battery_dimension": 400,
+            "coherence_bits": 7.288119443279699,
+            "coherence_upper_bits": 8.0,
+            "mean_energy": 22.9350288425444,
+            "A": 14.510394913873744,
+            "B": 381.6247035087884,
+            "coefficient_full_diamond_upper": 0.7855022172727388,
+            "analytic_full_diamond_upper": 1.3205007041826589,
+            "analytic_infidelity_upper": 0.7285521126525019,
+            "isometry_error_squared": 0.045211790620011974,
+            "maximally_entangled_probe_infidelity": 0.02909267471380461
+          },
+          {
+            "L": 32,
+            "padding_K": 1,
+            "battery_dimension": 1296,
+            "coherence_bits": 9.203204977044035,
+            "coherence_upper_bits": 10.0,
+            "mean_energy": 42.248737341529164,
+            "A": 14.510394913873744,
+            "B": 381.6247035087884,
+            "coefficient_full_diamond_upper": 0.21365539211229367,
+            "analytic_full_diamond_upper": 0.3504359077215688,
+            "analytic_infidelity_upper": 0.1933439490877622,
+            "isometry_error_squared": 0.01206120414831786,
+            "maximally_entangled_probe_infidelity": 0.007913162670824758
+          },
+          {
+            "L": 64,
+            "padding_K": 1,
+            "battery_dimension": 4624,
+            "coherence_bits": 11.15932027992664,
+            "coherence_upper_bits": 12.0,
+            "mean_energy": 80.87615433949868,
+            "A": 14.510394913873744,
+            "B": 381.6247035087884,
+            "coefficient_full_diamond_upper": 0.055618029923803075,
+            "analytic_full_diamond_upper": 0.09032537361154755,
+            "analytic_infidelity_upper": 0.049834688889129716,
+            "isometry_error_squared": 0.00311315265101515,
+            "maximally_entangled_probe_infidelity": 0.002059927034213316
+          },
+          {
+            "L": 128,
+            "padding_K": 1,
+            "battery_dimension": 17424,
+            "coherence_bits": 13.137061197503256,
+            "coherence_upper_bits": 14.0,
+            "mean_energy": 158.1309883354377,
+            "A": 14.510394913873744,
+            "B": 381.6247035087884,
+            "coefficient_full_diamond_upper": 0.01418103832785015,
+            "analytic_full_diamond_upper": 0.022932798720556962,
+            "analytic_infidelity_upper": 0.012652578604445228,
+            "isometry_error_squared": 0.0007906884595391636,
+            "maximally_entangled_probe_infidelity": 0.0005252236417724321
+          },
+          {
+            "L": 256,
+            "padding_K": 1,
+            "battery_dimension": 67600,
+            "coherence_bits": 15.12585860794632,
+            "coherence_upper_bits": 16.0,
+            "mean_energy": 312.6406563273158,
+            "A": 14.510394913873744,
+            "B": 381.6247035087884,
+            "coefficient_full_diamond_upper": 0.0035798230600560367,
+            "analytic_full_diamond_upper": 0.005777902822280252,
+            "analytic_infidelity_upper": 0.0031878084536718656,
+            "isometry_error_squared": 0.00019923182599184541,
+            "maximally_entangled_probe_infidelity": 0.00013258603926147305
+          }
+        ],
+        "last_interval_observations_not_theorem_certificates": {
+          "coherence_increment_per_log2_L": 1.9887974104430644,
+          "log_dimension_slope": 1.9559473873400022,
+          "log_mean_energy_slope": 0.9833852861491039,
+          "log_coefficient_diamond_upper_slope": -1.9860029835199333,
+          "log_choi_probe_infidelity_slope": -1.986002983518989
+        }
+      }
+    },
+    {
+      "name": "qutrit_spectator",
+      "system_dimension": 3,
+      "active_rank": 1,
+      "declared_exact_independent_energy_basis": [
+        "1",
+        "sqrt(2)"
+      ],
+      "system_gap_rank": 2,
+      "exact_system_charges": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "exact_battery_generators": [
+        [
+          1,
+          0
+        ]
+      ],
+      "integer_shifts": [
+        [
+          0
+        ],
+        [
+          1
+        ],
+        [
+          0
+        ]
+      ],
+      "components": [
+        0,
+        0,
+        1
+      ],
+      "battery_frequencies": [
+        1.0
+      ],
+      "finite_instances": [
+        {
+          "L": 2,
+          "padding_K": 1,
+          "battery_dimension": 6,
+          "coherence_bits": 1.0,
+          "coherence_upper_bits": 1.0,
+          "mean_energy": 2.5,
+          "A": 4.442882938158366,
+          "B": 53.43614600363519,
+          "coefficient_full_diamond_upper": 4.414213562373095,
+          "analytic_full_diamond_upper": 5.937349555959465,
+          "analytic_infidelity_upper": 1.0,
+          "isometry_error_squared": 0.5000000000000001,
+          "total_dimension": 18,
+          "complete_refined_blocks": 11,
+          "identity_boundary_blocks": 2,
+          "physical_total_energy_sectors": 13,
+          "sectors_with_multiple_refined_blocks": 0,
+          "global_unitarity_max_entry_defect": 2.220446049250313e-16,
+          "exact_integer_conservation_violations": 0,
+          "floating_commutator_max_entry": 0.0,
+          "channel_kernel_max_entry_discrepancy": 0.0,
+          "isometry_shift_max_entry_discrepancy": 0.0,
+          "choi_min_eigenvalue": -1.4226701604653255e-17,
+          "choi_half_trace_distance_lower_witness": 0.33333333333333337,
+          "reference_probe_count": 28,
+          "sample_max_reference_infidelity": 0.3347094209640241,
+          "explicit_purification_fidelity_discrepancy": 1.6653345369377348e-15,
+          "direct_mean_energy": 2.5,
+          "direct_coherence_bits": 1.0
+        },
+        {
+          "L": 4,
+          "padding_K": 1,
+          "battery_dimension": 8,
+          "coherence_bits": 1.8504896251021616,
+          "coherence_upper_bits": 2.0,
+          "mean_energy": 3.5,
+          "A": 4.442882938158366,
+          "B": 53.43614600363519,
+          "coefficient_full_diamond_upper": 1.8568999404757043,
+          "analytic_full_diamond_upper": 2.1374458401454075,
+          "analytic_infidelity_upper": 0.7895683520871486,
+          "isometry_error_squared": 0.1909830056250527,
+          "total_dimension": 24,
+          "complete_refined_blocks": 15,
+          "identity_boundary_blocks": 2,
+          "physical_total_energy_sectors": 17,
+          "sectors_with_multiple_refined_blocks": 0,
+          "global_unitarity_max_entry_defect": 2.220446049250313e-16,
+          "exact_integer_conservation_violations": 0,
+          "floating_commutator_max_entry": 0.0,
+          "channel_kernel_max_entry_discrepancy": 2.220446049250313e-16,
+          "isometry_shift_max_entry_discrepancy": 0.0,
+          "choi_min_eigenvalue": -1.5458281138882182e-16,
+          "choi_half_trace_distance_lower_witness": 0.14719653644882147,
+          "reference_probe_count": 28,
+          "sample_max_reference_infidelity": 0.13934417304546887,
+          "explicit_purification_fidelity_discrepancy": 1.5543122344752192e-15,
+          "direct_mean_energy": 3.5000000000000004,
+          "direct_coherence_bits": 1.8504896251021616
+        },
+        {
+          "L": 7,
+          "padding_K": 1,
+          "battery_dimension": 11,
+          "coherence_bits": 2.550438018346428,
+          "coherence_upper_bits": 2.807354922057604,
+          "mean_energy": 5.0,
+          "A": 4.442882938158366,
+          "B": 53.43614600363519,
+          "coefficient_full_diamond_upper": 0.776064631410061,
+          "analytic_full_diamond_upper": 0.8349397813067998,
+          "analytic_infidelity_upper": 0.30842513753404244,
+          "isometry_error_squared": 0.07612046748871384,
+          "total_dimension": 33,
+          "complete_refined_blocks": 21,
+          "identity_boundary_blocks": 2,
+          "physical_total_energy_sectors": 23,
+          "sectors_with_multiple_refined_blocks": 0,
+          "global_unitarity_max_entry_defect": 2.220446049250313e-16,
+          "exact_integer_conservation_violations": 0,
+          "floating_commutator_max_entry": 0.0,
+          "channel_kernel_max_entry_discrepancy": 5.551115123125783e-17,
+          "isometry_shift_max_entry_discrepancy": 0.0,
+          "choi_min_eigenvalue": -9.007523421971045e-18,
+          "choi_half_trace_distance_lower_witness": 0.0631149184687037,
+          "reference_probe_count": 28,
+          "sample_max_reference_infidelity": 0.060184617153941966,
+          "explicit_purification_fidelity_discrepancy": 3.3306690738754696e-16,
+          "direct_mean_energy": 5.0,
+          "direct_coherence_bits": 2.550438018346428
+        }
+      ],
+      "scaling": {
+        "method": "overlap kernel and exact resource formulas; no full unitary at these sizes",
+        "rows": [
+          {
+            "L": 8,
+            "padding_K": 1,
+            "battery_dimension": 12,
+            "coherence_bits": 2.722420921363933,
+            "coherence_upper_bits": 3.0,
+            "mean_energy": 5.5,
+            "A": 4.442882938158366,
+            "B": 53.43614600363519,
+            "coefficient_full_diamond_upper": 0.6197650390532095,
+            "analytic_full_diamond_upper": 0.6597055062177184,
+            "analytic_infidelity_upper": 0.24369393582936685,
+            "isometry_error_squared": 0.06030737921409191,
+            "maximally_entangled_probe_infidelity": 0.03835664048433829
+          },
+          {
+            "L": 16,
+            "padding_K": 1,
+            "battery_dimension": 20,
+            "coherence_bits": 3.6440597216398496,
+            "coherence_upper_bits": 4.0,
+            "mean_energy": 9.5,
+            "A": 4.442882938158366,
+            "B": 53.43614600363519,
+            "coefficient_full_diamond_upper": 0.1798224967646964,
+            "analytic_full_diamond_upper": 0.18490015918212868,
+            "analytic_infidelity_upper": 0.06830176056117203,
+            "isometry_error_squared": 0.017026900316098548,
+            "maximally_entangled_probe_infidelity": 0.01109837507359368
+          },
+          {
+            "L": 32,
+            "padding_K": 1,
+            "battery_dimension": 36,
+            "coherence_bits": 4.601602488522017,
+            "coherence_upper_bits": 5.0,
+            "mean_energy": 17.5,
+            "A": 4.442882938158366,
+            "B": 53.43614600363519,
+            "coefficient_full_diamond_upper": 0.04844333422772909,
+            "analytic_full_diamond_upper": 0.049069004594706325,
+            "analytic_infidelity_upper": 0.0181259952269777,
+            "isometry_error_squared": 0.004528077426915637,
+            "maximally_entangled_probe_infidelity": 0.0029860170510087602
+          },
+          {
+            "L": 64,
+            "padding_K": 1,
+            "battery_dimension": 68,
+            "coherence_bits": 5.57966013996332,
+            "coherence_upper_bits": 6.0,
+            "mean_energy": 33.5,
+            "A": 4.442882938158366,
+            "B": 53.43614600363519,
+            "coefficient_full_diamond_upper": 0.012570598251700543,
+            "analytic_full_diamond_upper": 0.012647608521570458,
+            "analytic_infidelity_upper": 0.004672002083355909,
+            "isometry_error_squared": 0.0011677731676740244,
+            "maximally_entangled_probe_infidelity": 0.0007743738677445933
+          },
+          {
+            "L": 128,
+            "padding_K": 1,
+            "battery_dimension": 132,
+            "coherence_bits": 6.568530598751628,
+            "coherence_upper_bits": 7.0,
+            "mean_energy": 65.5,
+            "A": 4.442882938158366,
+            "B": 53.43614600363519,
+            "coefficient_full_diamond_upper": 0.0032015859417045336,
+            "analytic_full_diamond_upper": 0.0032111138755865146,
+            "analytic_infidelity_upper": 0.0011861792441667397,
+            "isometry_error_squared": 0.00029653015486086787,
+            "maximally_entangled_probe_infidelity": 0.00019716625710208824
+          },
+          {
+            "L": 256,
+            "padding_K": 1,
+            "battery_dimension": 260,
+            "coherence_bits": 7.56292930397316,
+            "coherence_upper_bits": 8.0,
+            "mean_energy": 129.5,
+            "A": 4.442882938158366,
+            "B": 53.43614600363519,
+            "coefficient_full_diamond_upper": 0.0008078538779355764,
+            "analytic_full_diamond_upper": 0.0008090379264430224,
+            "analytic_infidelity_upper": 0.0002988570425317373,
+            "isometry_error_squared": 7.471333026789668e-05,
+            "maximally_entangled_probe_infidelity": 4.974366606136371e-05
+          }
+        ],
+        "last_interval_observations_not_theorem_certificates": {
+          "coherence_increment_per_log2_L": 0.9943987052215322,
+          "log_dimension_slope": 0.9779736936700011,
+          "log_mean_energy_slope": 0.9833852861491038,
+          "log_coefficient_diamond_upper_slope": -1.9866204658842055,
+          "log_choi_probe_infidelity_slope": -1.9868279291494897
+        }
+      }
+    },
+    {
+      "name": "degenerate_fourier",
+      "system_dimension": 4,
+      "active_rank": 1,
+      "declared_exact_independent_energy_basis": [
+        "1"
+      ],
+      "system_gap_rank": 1,
+      "exact_system_charges": [
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          1
+        ],
+        [
+          1
+        ]
+      ],
+      "exact_battery_generators": [
+        [
+          1
+        ]
+      ],
+      "integer_shifts": [
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          1
+        ],
+        [
+          1
+        ]
+      ],
+      "components": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "battery_frequencies": [
+        1.0
+      ],
+      "finite_instances": [
+        {
+          "L": 2,
+          "padding_K": 1,
+          "battery_dimension": 6,
+          "coherence_bits": 1.0,
+          "coherence_upper_bits": 1.0,
+          "mean_energy": 2.5,
+          "A": 12.566370614359172,
+          "B": 315.82734083485946,
+          "coefficient_full_diamond_upper": 24.0,
+          "analytic_full_diamond_upper": 35.09192675942883,
+          "analytic_infidelity_upper": 1.0,
+          "isometry_error_squared": 0.8535533905932738,
+          "total_dimension": 24,
+          "complete_refined_blocks": 5,
+          "identity_boundary_blocks": 2,
+          "physical_total_energy_sectors": 7,
+          "sectors_with_multiple_refined_blocks": 0,
+          "global_unitarity_max_entry_defect": 1.1704836984704332e-16,
+          "exact_integer_conservation_violations": 0,
+          "floating_commutator_max_entry": 0.0,
+          "channel_kernel_max_entry_discrepancy": 1.232595164407831e-32,
+          "isometry_shift_max_entry_discrepancy": 0.0,
+          "choi_min_eigenvalue": -3.479614554232916e-17,
+          "choi_half_trace_distance_lower_witness": 0.40450849718747384,
+          "reference_probe_count": 29,
+          "sample_max_reference_infidelity": 0.449426671611887,
+          "explicit_purification_fidelity_discrepancy": 1.1102230246251565e-16,
+          "direct_mean_energy": 2.5,
+          "direct_coherence_bits": 1.0
+        },
+        {
+          "L": 4,
+          "padding_K": 1,
+          "battery_dimension": 8,
+          "coherence_bits": 1.8504896251021616,
+          "coherence_upper_bits": 2.0,
+          "mean_energy": 3.5,
+          "A": 12.566370614359172,
+          "B": 315.82734083485946,
+          "coefficient_full_diamond_upper": 10.533747416002003,
+          "analytic_full_diamond_upper": 12.633093633394378,
+          "analytic_infidelity_upper": 1.0,
+          "isometry_error_squared": 0.3260283839939158,
+          "total_dimension": 32,
+          "complete_refined_blocks": 7,
+          "identity_boundary_blocks": 2,
+          "physical_total_energy_sectors": 9,
+          "sectors_with_multiple_refined_blocks": 0,
+          "global_unitarity_max_entry_defect": 1.1704836984704332e-16,
+          "exact_integer_conservation_violations": 0,
+          "floating_commutator_max_entry": 0.0,
+          "channel_kernel_max_entry_discrepancy": 5.551115123125783e-17,
+          "isometry_shift_max_entry_discrepancy": 0.0,
+          "choi_min_eigenvalue": -1.1094145099581346e-16,
+          "choi_half_trace_distance_lower_witness": 0.18696772938109685,
+          "reference_probe_count": 29,
+          "sample_max_reference_infidelity": 0.19658728252017477,
+          "explicit_purification_fidelity_discrepancy": 5.551115123125783e-16,
+          "direct_mean_energy": 3.5000000000000004,
+          "direct_coherence_bits": 1.8504896251021616
+        },
+        {
+          "L": 7,
+          "padding_K": 1,
+          "battery_dimension": 11,
+          "coherence_bits": 2.550438018346428,
+          "coherence_upper_bits": 2.807354922057604,
+          "mean_energy": 5.0,
+          "A": 12.566370614359172,
+          "B": 315.82734083485946,
+          "coefficient_full_diamond_upper": 4.486107491333002,
+          "analytic_full_diamond_upper": 4.934802200544679,
+          "analytic_infidelity_upper": 1.0,
+          "isometry_error_squared": 0.12994576623707257,
+          "total_dimension": 44,
+          "complete_refined_blocks": 10,
+          "identity_boundary_blocks": 2,
+          "physical_total_energy_sectors": 12,
+          "sectors_with_multiple_refined_blocks": 0,
+          "global_unitarity_max_entry_defect": 1.1704836984704332e-16,
+          "exact_integer_conservation_violations": 0,
+          "floating_commutator_max_entry": 0.0,
+          "channel_kernel_max_entry_discrepancy": 2.465190328815662e-32,
+          "isometry_shift_max_entry_discrepancy": 0.0,
+          "choi_min_eigenvalue": -7.837718130697094e-17,
+          "choi_half_trace_distance_lower_witness": 0.08178291096243084,
+          "reference_probe_count": 29,
+          "sample_max_reference_infidelity": 0.08661833350802883,
+          "explicit_purification_fidelity_discrepancy": 1.3322676295501878e-15,
+          "direct_mean_energy": 5.0,
+          "direct_coherence_bits": 2.550438018346428
+        }
+      ],
+      "scaling": {
+        "method": "overlap kernel and exact resource formulas; no full unitary at these sizes",
+        "rows": [
+          {
+            "L": 8,
+            "padding_K": 1,
+            "battery_dimension": 12,
+            "coherence_bits": 2.722420921363933,
+            "coherence_upper_bits": 3.0,
+            "mean_energy": 5.5,
+            "A": 12.566370614359172,
+            "B": 315.82734083485946,
+            "coefficient_full_diamond_upper": 3.593520094893741,
+            "analytic_full_diamond_upper": 3.8991029732698697,
+            "analytic_infidelity_upper": 1.0,
+            "isometry_error_squared": 0.10295113601196447,
+            "maximally_entangled_probe_infidelity": 0.05614875148271614
+          },
+          {
+            "L": 16,
+            "padding_K": 1,
+            "battery_dimension": 20,
+            "coherence_bits": 3.6440597216398496,
+            "coherence_upper_bits": 4.0,
+            "mean_energy": 9.5,
+            "A": 12.566370614359172,
+            "B": 315.82734083485946,
+            "coefficient_full_diamond_upper": 1.0533052004823467,
+            "analytic_full_diamond_upper": 1.0928281689787525,
+            "analytic_infidelity_upper": 0.5464140844893762,
+            "isometry_error_squared": 0.029066736992198767,
+            "maximally_entangled_probe_infidelity": 0.016457893757536368
+          },
+          {
+            "L": 32,
+            "padding_K": 1,
+            "battery_dimension": 36,
+            "coherence_bits": 4.601602488522017,
+            "coherence_upper_bits": 5.0,
+            "mean_energy": 17.5,
+            "A": 12.566370614359172,
+            "B": 315.82734083485946,
+            "coefficient_full_diamond_upper": 0.2850879776839269,
+            "analytic_full_diamond_upper": 0.2900159236316432,
+            "analytic_infidelity_upper": 0.1450079618158216,
+            "isometry_error_squared": 0.007729911681224908,
+            "maximally_entangled_probe_infidelity": 0.004454499651313837
+          },
+          {
+            "L": 64,
+            "padding_K": 1,
+            "battery_dimension": 68,
+            "coherence_bits": 5.57966013996332,
+            "coherence_upper_bits": 6.0,
+            "mean_energy": 33.5,
+            "A": 12.566370614359172,
+            "B": 315.82734083485946,
+            "coefficient_full_diamond_upper": 0.07414109558961446,
+            "analytic_full_diamond_upper": 0.07475203333369454,
+            "analytic_infidelity_upper": 0.03737601666684727,
+            "isometry_error_squared": 0.001993513493423441,
+            "maximally_entangled_probe_infidelity": 0.0011584546185894329
+          },
+          {
+            "L": 128,
+            "padding_K": 1,
+            "battery_dimension": 132,
+            "coherence_bits": 6.568530598751628,
+            "coherence_upper_bits": 7.0,
+            "mean_energy": 65.5,
+            "A": 12.566370614359172,
+            "B": 315.82734083485946,
+            "coefficient_full_diamond_upper": 0.01890297606713709,
+            "analytic_full_diamond_upper": 0.018978867906667835,
+            "analytic_infidelity_upper": 0.009489433953333917,
+            "isometry_error_squared": 0.0005062086381888075,
+            "maximally_entangled_probe_infidelity": 0.0002953590010477125
+          },
+          {
+            "L": 256,
+            "padding_K": 1,
+            "battery_dimension": 260,
+            "coherence_bits": 7.56292930397316,
+            "coherence_upper_bits": 8.0,
+            "mean_energy": 129.5,
+            "A": 12.566370614359172,
+            "B": 315.82734083485946,
+            "coefficient_full_diamond_upper": 0.0047722613442164885,
+            "analytic_full_diamond_upper": 0.004781712680507796,
+            "analytic_infidelity_upper": 0.002390856340253898,
+            "isometry_error_squared": 0.00012754363274473493,
+            "maximally_entangled_probe_infidelity": 7.456658350268874e-05
+          }
+        ],
+        "last_interval_observations_not_theorem_certificates": {
+          "coherence_increment_per_log2_L": 0.9943987052215322,
+          "log_dimension_slope": 0.9779736936700011,
+          "log_mean_energy_slope": 0.9833852861491038,
+          "log_coefficient_diamond_upper_slope": -1.9858684320261633,
+          "log_choi_probe_infidelity_slope": -1.9858684320332165
+        }
+      }
+    },
+    {
+      "name": "resonant_components",
+      "system_dimension": 4,
+      "active_rank": 1,
+      "declared_exact_independent_energy_basis": [
+        "1"
+      ],
+      "system_gap_rank": 1,
+      "exact_system_charges": [
+        [
+          0
+        ],
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ]
+      ],
+      "exact_battery_generators": [
+        [
+          1
+        ]
+      ],
+      "integer_shifts": [
+        [
+          0
+        ],
+        [
+          1
+        ],
+        [
+          0
+        ],
+        [
+          1
+        ]
+      ],
+      "components": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "battery_frequencies": [
+        1.0
+      ],
+      "finite_instances": [
+        {
+          "L": 2,
+          "padding_K": 1,
+          "battery_dimension": 6,
+          "coherence_bits": 1.0,
+          "coherence_upper_bits": 1.0,
+          "mean_energy": 2.5,
+          "A": 6.947419211054821,
+          "B": 119.16729087737677,
+          "coefficient_full_diamond_upper": 9.628954734986193,
+          "analytic_full_diamond_upper": 13.240810097486309,
+          "analytic_infidelity_upper": 1.0,
+          "isometry_error_squared": 0.5000000000000001,
+          "total_dimension": 24,
+          "complete_refined_blocks": 10,
+          "identity_boundary_blocks": 4,
+          "physical_total_energy_sectors": 9,
+          "sectors_with_multiple_refined_blocks": 5,
+          "global_unitarity_max_entry_defect": 2.220446049250313e-16,
+          "exact_integer_conservation_violations": 0,
+          "floating_commutator_max_entry": 0.0,
+          "channel_kernel_max_entry_discrepancy": 1.1102230246251565e-16,
+          "isometry_shift_max_entry_discrepancy": 0.0,
+          "choi_min_eigenvalue": -5.353264969549334e-17,
+          "choi_half_trace_distance_lower_witness": 0.3313814253826106,
+          "reference_probe_count": 29,
+          "sample_max_reference_infidelity": 0.3305276220284581,
+          "explicit_purification_fidelity_discrepancy": 1.6653345369377348e-15,
+          "direct_mean_energy": 2.5,
+          "direct_coherence_bits": 1.0
+        },
+        {
+          "L": 4,
+          "padding_K": 1,
+          "battery_dimension": 8,
+          "coherence_bits": 1.8504896251021616,
+          "coherence_upper_bits": 2.0,
+          "mean_energy": 3.5,
+          "A": 6.947419211054821,
+          "B": 119.16729087737677,
+          "coefficient_full_diamond_upper": 4.09562623030597,
+          "analytic_full_diamond_upper": 4.7666916350950705,
+          "analytic_infidelity_upper": 1.0,
+          "isometry_error_squared": 0.1909830056250527,
+          "total_dimension": 32,
+          "complete_refined_blocks": 14,
+          "identity_boundary_blocks": 4,
+          "physical_total_energy_sectors": 11,
+          "sectors_with_multiple_refined_blocks": 7,
+          "global_unitarity_max_entry_defect": 2.220446049250313e-16,
+          "exact_integer_conservation_violations": 0,
+          "floating_commutator_max_entry": 0.0,
+          "channel_kernel_max_entry_discrepancy": 1.1102230246251565e-16,
+          "isometry_shift_max_entry_discrepancy": 0.0,
+          "choi_min_eigenvalue": -1.1396121427463952e-17,
+          "choi_half_trace_distance_lower_witness": 0.14617816185891452,
+          "reference_probe_count": 29,
+          "sample_max_reference_infidelity": 0.13713984546752456,
+          "explicit_purification_fidelity_discrepancy": 2.4424906541753444e-15,
+          "direct_mean_energy": 3.5000000000000004,
+          "direct_coherence_bits": 1.8504896251021616
+        },
+        {
+          "L": 7,
+          "padding_K": 1,
+          "battery_dimension": 11,
+          "coherence_bits": 2.550438018346428,
+          "coherence_upper_bits": 2.807354922057604,
+          "mean_energy": 5.0,
+          "A": 6.947419211054821,
+          "B": 119.16729087737677,
+          "coefficient_full_diamond_upper": 1.7203229122031893,
+          "analytic_full_diamond_upper": 1.861988919959012,
+          "analytic_infidelity_upper": 0.7541661514708373,
+          "isometry_error_squared": 0.07612046748871384,
+          "total_dimension": 44,
+          "complete_refined_blocks": 20,
+          "identity_boundary_blocks": 4,
+          "physical_total_energy_sectors": 14,
+          "sectors_with_multiple_refined_blocks": 10,
+          "global_unitarity_max_entry_defect": 2.220446049250313e-16,
+          "exact_integer_conservation_violations": 0,
+          "floating_commutator_max_entry": 0.0,
+          "channel_kernel_max_entry_discrepancy": 1.1102230246251565e-16,
+          "isometry_shift_max_entry_discrepancy": 0.0,
+          "choi_min_eigenvalue": -6.167178673004e-17,
+          "choi_half_trace_distance_lower_witness": 0.06264754173495524,
+          "reference_probe_count": 29,
+          "sample_max_reference_infidelity": 0.05344065228747785,
+          "explicit_purification_fidelity_discrepancy": 7.771561172376096e-16,
+          "direct_mean_energy": 5.0,
+          "direct_coherence_bits": 2.550438018346428
+        }
+      ],
+      "scaling": {
+        "method": "overlap kernel and exact resource formulas; no full unitary at these sizes",
+        "rows": [
+          {
+            "L": 8,
+            "padding_K": 1,
+            "battery_dimension": 12,
+            "coherence_bits": 2.722420921363933,
+            "coherence_upper_bits": 3.0,
+            "mean_energy": 5.5,
+            "A": 6.947419211054821,
+            "B": 119.16729087737677,
+            "coefficient_full_diamond_upper": 1.3749732618153845,
+            "analytic_full_diamond_upper": 1.471201121942923,
+            "analytic_infidelity_upper": 0.5958843665942418,
+            "isometry_error_squared": 0.06030737921409191,
+            "maximally_entangled_probe_infidelity": 0.03793048585197656
+          },
+          {
+            "L": 16,
+            "padding_K": 1,
+            "battery_dimension": 20,
+            "coherence_bits": 3.6440597216398496,
+            "coherence_upper_bits": 4.0,
+            "mean_energy": 9.5,
+            "A": 6.947419211054821,
+            "B": 119.16729087737677,
+            "coefficient_full_diamond_upper": 0.4000406582106558,
+            "analytic_full_diamond_upper": 0.4123435670497466,
+            "analytic_infidelity_upper": 0.1670125733361024,
+            "isometry_error_squared": 0.017026900316098548,
+            "maximally_entangled_probe_infidelity": 0.010971818274145506
+          },
+          {
+            "L": 32,
+            "padding_K": 1,
+            "battery_dimension": 36,
+            "coherence_bits": 4.601602488522017,
+            "coherence_upper_bits": 5.0,
+            "mean_energy": 17.5,
+            "A": 6.947419211054821,
+            "B": 119.16729087737677,
+            "coefficient_full_diamond_upper": 0.10790625340637083,
+            "analytic_full_diamond_upper": 0.10942818262385379,
+            "analytic_infidelity_upper": 0.044321977680563444,
+            "isometry_error_squared": 0.004528077426915637,
+            "maximally_entangled_probe_infidelity": 0.002951559497451517
+          },
+          {
+            "L": 64,
+            "padding_K": 1,
+            "battery_dimension": 68,
+            "coherence_bits": 5.57966013996332,
+            "coherence_upper_bits": 6.0,
+            "mean_energy": 33.5,
+            "A": 6.947419211054821,
+            "B": 119.16729087737677,
+            "coefficient_full_diamond_upper": 0.028017498805750943,
+            "analytic_full_diamond_upper": 0.028205275947308112,
+            "analytic_infidelity_upper": 0.011424055312220968,
+            "isometry_error_squared": 0.0011677731676740244,
+            "maximally_entangled_probe_infidelity": 0.0007653878470167408
+          },
+          {
+            "L": 128,
+            "padding_K": 1,
+            "battery_dimension": 132,
+            "coherence_bits": 6.568530598751628,
+            "coherence_upper_bits": 7.0,
+            "mean_energy": 65.5,
+            "A": 6.947419211054821,
+            "B": 119.16729087737677,
+            "coefficient_full_diamond_upper": 0.007137801776583562,
+            "analytic_full_diamond_upper": 0.0071610654935026,
+            "analytic_infidelity_upper": 0.0029004647373435245,
+            "isometry_error_squared": 0.00029653015486086787,
+            "maximally_entangled_probe_infidelity": 0.0001948721356000993
+          },
+          {
+            "L": 256,
+            "padding_K": 1,
+            "battery_dimension": 260,
+            "coherence_bits": 7.56292930397316,
+            "coherence_upper_bits": 8.0,
+            "mean_energy": 129.5,
+            "A": 6.947419211054821,
+            "B": 119.16729087737677,
+            "coefficient_full_diamond_upper": 0.0018013324251989302,
+            "analytic_full_diamond_upper": 0.0018042255125342817,
+            "analytic_infidelity_upper": 0.0007307700902986205,
+            "isometry_error_squared": 7.471333026789668e-05,
+            "maximally_entangled_probe_infidelity": 4.916411313871105e-05
+          }
+        ],
+        "last_interval_observations_not_theorem_certificates": {
+          "coherence_increment_per_log2_L": 0.9943987052215322,
+          "log_dimension_slope": 0.9779736936700011,
+          "log_mean_energy_slope": 0.9833852861491038,
+          "log_coefficient_diamond_upper_slope": -1.986415390341819,
+          "log_choi_probe_infidelity_slope": -1.9868502933297474
+        }
+      }
+    },
+    {
+      "name": "energy_preserving_degenerate",
+      "system_dimension": 3,
+      "active_rank": 0,
+      "declared_exact_independent_energy_basis": [
+        "1"
+      ],
+      "system_gap_rank": 1,
+      "exact_system_charges": [
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          1
+        ]
+      ],
+      "exact_battery_generators": [],
+      "integer_shifts": [
+        [],
+        [],
+        []
+      ],
+      "components": [
+        0,
+        0,
+        1
+      ],
+      "battery_frequencies": [],
+      "finite_instances": [
+        {
+          "L": 2,
+          "padding_K": 0,
+          "battery_dimension": 1,
+          "coherence_bits": 0.0,
+          "coherence_upper_bits": 0.0,
+          "mean_energy": 0.0,
+          "A": 0.0,
+          "B": 0.0,
+          "coefficient_full_diamond_upper": 0.0,
+          "analytic_full_diamond_upper": 0.0,
+          "analytic_infidelity_upper": 0.0,
+          "isometry_error_squared": 4.888314961915774e-16,
+          "total_dimension": 3,
+          "complete_refined_blocks": 2,
+          "identity_boundary_blocks": 0,
+          "physical_total_energy_sectors": 2,
+          "sectors_with_multiple_refined_blocks": 0,
+          "global_unitarity_max_entry_defect": 2.220446049250313e-16,
+          "exact_integer_conservation_violations": 0,
+          "floating_commutator_max_entry": 0.0,
+          "channel_kernel_max_entry_discrepancy": 0.0,
+          "isometry_shift_max_entry_discrepancy": 0.0,
+          "choi_min_eigenvalue": -9.530644604259601e-17,
+          "choi_half_trace_distance_lower_witness": 1.7772239894833378e-16,
+          "reference_probe_count": 28,
+          "sample_max_reference_infidelity": 7.771561172376096e-16,
+          "explicit_purification_fidelity_discrepancy": 8.881784197001252e-16,
+          "direct_mean_energy": 0.0,
+          "direct_coherence_bits": -0.0
+        },
+        {
+          "L": 4,
+          "padding_K": 0,
+          "battery_dimension": 1,
+          "coherence_bits": 0.0,
+          "coherence_upper_bits": 0.0,
+          "mean_energy": 0.0,
+          "A": 0.0,
+          "B": 0.0,
+          "coefficient_full_diamond_upper": 0.0,
+          "analytic_full_diamond_upper": 0.0,
+          "analytic_infidelity_upper": 0.0,
+          "isometry_error_squared": 4.888314961915774e-16,
+          "total_dimension": 3,
+          "complete_refined_blocks": 2,
+          "identity_boundary_blocks": 0,
+          "physical_total_energy_sectors": 2,
+          "sectors_with_multiple_refined_blocks": 0,
+          "global_unitarity_max_entry_defect": 2.220446049250313e-16,
+          "exact_integer_conservation_violations": 0,
+          "floating_commutator_max_entry": 0.0,
+          "channel_kernel_max_entry_discrepancy": 0.0,
+          "isometry_shift_max_entry_discrepancy": 0.0,
+          "choi_min_eigenvalue": -9.530644604259601e-17,
+          "choi_half_trace_distance_lower_witness": 1.7772239894833378e-16,
+          "reference_probe_count": 28,
+          "sample_max_reference_infidelity": 7.771561172376096e-16,
+          "explicit_purification_fidelity_discrepancy": 1.1102230246251565e-15,
+          "direct_mean_energy": 0.0,
+          "direct_coherence_bits": -0.0
+        },
+        {
+          "L": 7,
+          "padding_K": 0,
+          "battery_dimension": 1,
+          "coherence_bits": 0.0,
+          "coherence_upper_bits": 0.0,
+          "mean_energy": 0.0,
+          "A": 0.0,
+          "B": 0.0,
+          "coefficient_full_diamond_upper": 0.0,
+          "analytic_full_diamond_upper": 0.0,
+          "analytic_infidelity_upper": 0.0,
+          "isometry_error_squared": 4.888314961915774e-16,
+          "total_dimension": 3,
+          "complete_refined_blocks": 2,
+          "identity_boundary_blocks": 0,
+          "physical_total_energy_sectors": 2,
+          "sectors_with_multiple_refined_blocks": 0,
+          "global_unitarity_max_entry_defect": 2.220446049250313e-16,
+          "exact_integer_conservation_violations": 0,
+          "floating_commutator_max_entry": 0.0,
+          "channel_kernel_max_entry_discrepancy": 0.0,
+          "isometry_shift_max_entry_discrepancy": 0.0,
+          "choi_min_eigenvalue": -9.530644604259601e-17,
+          "choi_half_trace_distance_lower_witness": 1.7772239894833378e-16,
+          "reference_probe_count": 28,
+          "sample_max_reference_infidelity": 7.771561172376096e-16,
+          "explicit_purification_fidelity_discrepancy": 1.9984014443252818e-15,
+          "direct_mean_energy": 0.0,
+          "direct_coherence_bits": -0.0
+        }
+      ],
+      "scaling": {
+        "method": "overlap kernel and exact resource formulas; no full unitary at these sizes",
+        "rows": [
+          {
+            "L": 8,
+            "padding_K": 0,
+            "battery_dimension": 1,
+            "coherence_bits": 0.0,
+            "coherence_upper_bits": 0.0,
+            "mean_energy": 0.0,
+            "A": 0.0,
+            "B": 0.0,
+            "coefficient_full_diamond_upper": 0.0,
+            "analytic_full_diamond_upper": 0.0,
+            "analytic_infidelity_upper": 0.0,
+            "isometry_error_squared": 4.888314961915774e-16,
+            "maximally_entangled_probe_infidelity": 0.0
+          },
+          {
+            "L": 16,
+            "padding_K": 0,
+            "battery_dimension": 1,
+            "coherence_bits": 0.0,
+            "coherence_upper_bits": 0.0,
+            "mean_energy": 0.0,
+            "A": 0.0,
+            "B": 0.0,
+            "coefficient_full_diamond_upper": 0.0,
+            "analytic_full_diamond_upper": 0.0,
+            "analytic_infidelity_upper": 0.0,
+            "isometry_error_squared": 4.888314961915774e-16,
+            "maximally_entangled_probe_infidelity": 0.0
+          },
+          {
+            "L": 32,
+            "padding_K": 0,
+            "battery_dimension": 1,
+            "coherence_bits": 0.0,
+            "coherence_upper_bits": 0.0,
+            "mean_energy": 0.0,
+            "A": 0.0,
+            "B": 0.0,
+            "coefficient_full_diamond_upper": 0.0,
+            "analytic_full_diamond_upper": 0.0,
+            "analytic_infidelity_upper": 0.0,
+            "isometry_error_squared": 4.888314961915774e-16,
+            "maximally_entangled_probe_infidelity": 0.0
+          },
+          {
+            "L": 64,
+            "padding_K": 0,
+            "battery_dimension": 1,
+            "coherence_bits": 0.0,
+            "coherence_upper_bits": 0.0,
+            "mean_energy": 0.0,
+            "A": 0.0,
+            "B": 0.0,
+            "coefficient_full_diamond_upper": 0.0,
+            "analytic_full_diamond_upper": 0.0,
+            "analytic_infidelity_upper": 0.0,
+            "isometry_error_squared": 4.888314961915774e-16,
+            "maximally_entangled_probe_infidelity": 0.0
+          },
+          {
+            "L": 128,
+            "padding_K": 0,
+            "battery_dimension": 1,
+            "coherence_bits": 0.0,
+            "coherence_upper_bits": 0.0,
+            "mean_energy": 0.0,
+            "A": 0.0,
+            "B": 0.0,
+            "coefficient_full_diamond_upper": 0.0,
+            "analytic_full_diamond_upper": 0.0,
+            "analytic_infidelity_upper": 0.0,
+            "isometry_error_squared": 4.888314961915774e-16,
+            "maximally_entangled_probe_infidelity": 0.0
+          },
+          {
+            "L": 256,
+            "padding_K": 0,
+            "battery_dimension": 1,
+            "coherence_bits": 0.0,
+            "coherence_upper_bits": 0.0,
+            "mean_energy": 0.0,
+            "A": 0.0,
+            "B": 0.0,
+            "coefficient_full_diamond_upper": 0.0,
+            "analytic_full_diamond_upper": 0.0,
+            "analytic_infidelity_upper": 0.0,
+            "isometry_error_squared": 4.888314961915774e-16,
+            "maximally_entangled_probe_infidelity": 0.0
+          }
+        ],
+        "last_interval_observations_not_theorem_certificates": {
+          "coherence_increment_per_log2_L": 0.0,
+          "log_dimension_slope": 0.0,
+          "log_mean_energy_slope": null,
+          "log_coefficient_diamond_upper_slope": null,
+          "log_choi_probe_infidelity_slope": null
+        }
+      }
+    }
+  ]
+}

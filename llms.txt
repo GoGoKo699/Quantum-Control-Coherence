@@ -1,0 +1,35 @@
+# Quantum Control Coherence
+
+> Optimal leading entropic coherence and finite-controller dimension for a fixed quantum gate under exact additive energy conservation.
+
+## Scientific question
+
+How much initial energy coherence must a finite battery supply to implement a fixed unitary accurately on every system input, including inputs entangled with a reference? The active transition rank r_U determines the leading coefficient r_U/2 in both minimum coherence divided by log2(1/error) and minimum log2 battery dimension divided by log2(1/error).
+
+## Reading routes
+
+- [Overview](README.md): scientific question, main law, examples, scope, and reproduction commands.
+- [Model and exact theorem](science/model.md): finite mixed batteries, exact conservation, product initial input, squared-fidelity and half-diamond conventions, separate resource optimizations, and explicit remainder bounds.
+- [Transition rank](science/transition_rank.md): spectral blocks, integer coordinates on active components, dense real-time orbit, finite projective stabilizer, positive Choi metric, and quantitative packing using actual times.
+- [Coherence converse](science/coherence_converse.md): finite-ensemble Holevo bound, imported recycling and estimation theorems with constants, Fano argument, logarithmic remainder, and dimension lower bound.
+- [Finite construction](science/battery_construction.md): positive energy lattice, sine packets, all-pair padding, complete and incomplete energy blocks, global unitarity, reference-assisted fidelity, real-kernel diamond estimate, entropy, dimension, and mean energy.
+- [Examples](science/examples.md): qubit and qutrit gates, commensurate versus irrational gaps, spectators, degeneracies, projective phase, small-angle limits, and rational approximants.
+- [Physical interpretation](science/interpretation.md): phase information, initial resource stock, the distinction between dimension and energy, and the order of limits.
+- [Attribution](references/RELATED_WORK.md): closest entropic-coherence comparison and the inherited symmetry, programming, recycling, estimation, and controller constructions.
+- [Bibliography](references/references.bib): primary sources with exact versions and proof dependencies.
+- [Verification](verification/README.md): commands, model declarations, exact and floating checks, recorded results, and their limits.
+
+For the conceptual story, read the overview, interpretation, and examples. For the proof, read model, transition rank, coherence converse, and battery construction in that order. For reproduction, read the verification account, run verification/verify_construction.py with the pinned dependency, and compare its output with verification/results.json.
+
+## Essential distinctions
+
+- r_U is the rational rank of nonzero spectral-block transitions of the fixed gate. It need not equal the rank of the full system spectrum. Degenerate eigenspaces are handled by spectral projections.
+- Energy coherence is S(Delta_HB beta) - S(beta), with dephasing by total battery energy. Internal coherence inside a degenerate eigenspace contributes zero.
+- The resource is initial coherence, not one-use depletion. Arbitrary mixed finite states and battery spectra are allowed in the converse.
+- Accuracy is optimized separately for worst-case reference-assisted squared-fidelity infidelity and half diamond distance. These metrics are not identical; the construction proves quadratic inverse-width decay for each.
+- D_min(error) = error^(-r_U/2 + o(1)) fixes a leading exponent. The lower bound retains a polylogarithmic gap; a constant-factor Theta statement is not established.
+- Fixed H, U, and system dimension precede the small-error limit. Constants are not uniform near changes of rational relations or active gate support.
+- Mean energy O(error^(-1/2)) is achieved by the construction. It is not claimed to be the optimal energy law or a bound on preparation or interaction time.
+- Finite numerical checks exercise a global conserving implementation and independently derived channel formulas. They do not certify the general theorem or compute the exact diamond norm.
+
+The topic pages contain the authoritative scientific account. Use their source links when relying on imported results, and retain their assumptions and distinctions when summarizing the headline law.
