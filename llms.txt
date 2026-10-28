@@ -21,12 +21,24 @@ How much initial energy coherence must a finite battery supply to implement a fi
 
 For the conceptual story, read the overview, interpretation, and examples. For the proof, read model, transition rank, coherence converse, and battery construction in that order. For reproduction, read the verification account, run verification/verify_construction.py with the pinned dependency, and compare its output with verification/results.json.
 
+## Learning route
+
+The one selected educational anchor is John Watrous, The Theory of Quantum Information (Cambridge University Press, 2018), using the author's available manuscript at https://cs.uwaterloo.ca/~watrous/TQI/. The project supplies the bridge beyond the selected textbook sections; the book is not a requirement to read in full. Primary research papers remain proof dependencies and attribution sources, rather than additional educational anchors.
+
+- [Learning guide](learning/README.md): where to begin and how the common learning materials fit together.
+- [Worked controller tutorial](learning/TUTORIAL.md): a complete qubit example, shifted battery overlaps, what the two proof directions establish, and the fixed-spectrum limits.
+- [Watrous bridge](learning/ANCHOR_BRIDGE.md): verified source selections, notation translation, mathematical interfaces, and the steps from the textbook to this project.
+- [Thirty milestones](learning/MILESTONES.md): exactly M01 through M30, with 12 background/preliminaries and 18 narrative/innovation targets. Dependencies refer to earlier milestones, and source pointers lead to the canonical science.
+
+For self-directed study, use the learning guide, tutorial, milestone map, and relevant bridge sections together. The map describes a reader-independent conceptual route; it contains no learner assessment or progress. Preserve the single selected anchor and the scientific assumptions when explaining the project.
+
 ## Essential distinctions
 
 - r_U is the rational rank of nonzero spectral-block transitions of the fixed gate. It need not equal the rank of the full system spectrum. Degenerate eigenspaces are handled by spectral projections.
 - Energy coherence is S(Delta_HB beta) - S(beta), with dephasing by total battery energy. Internal coherence inside a degenerate eigenspace contributes zero.
 - The resource is initial coherence, not one-use depletion. Arbitrary mixed finite states and battery spectra are allowed in the converse.
 - Accuracy is optimized separately for worst-case reference-assisted squared-fidelity infidelity and half diamond distance. These metrics are not identical; the construction proves quadratic inverse-width decay for each.
+- Watrous defines unsquared fidelity F_W; this repository uses F = F_W squared. His completely bounded trace norm is the full diamond norm, while this project's delta includes a factor of one half. His Choi operator is unnormalized; divide it by system dimension when using this project's Choi-state metric.
 - D_min(error) = error^(-r_U/2 + o(1)) fixes a leading exponent. The lower bound retains a polylogarithmic gap; a constant-factor Theta statement is not established.
 - Fixed H, U, and system dimension precede the small-error limit. Constants are not uniform near changes of rational relations or active gate support.
 - Mean energy O(error^(-1/2)) is achieved by the construction. It is not claimed to be the optimal energy law or a bound on preparation or interaction time.

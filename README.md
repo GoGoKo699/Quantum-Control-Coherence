@@ -78,6 +78,14 @@ Start with the [model and theorem](science/model.md), then follow the proofs or 
 
 The converse uses the known connection between asymmetry and accessible orbit information, approximate processor recycling, and parallel unitary estimation. The construction uses conserving energy shifts and smooth finite packets. The contribution developed here is the matching active-rank law for arbitrary mixed finite batteries and the corresponding optimal leading dimension exponent. The [attribution map](references/RELATED_WORK.md#what-is-inherited-and-what-is-established-here) distinguishes this conclusion from those inherited ingredients and the known qubit endpoint.
 
+## Learn the project
+
+The single educational anchor is **John Watrous, *The Theory of Quantum Information* (Cambridge University Press, 2018)**. The [source bridge](learning/ANCHOR_BRIDGE.md) identifies the relevant sections, translates conventions, and explains the additional orbit, information, and conserving-controller arguments used here. In particular, Watrous's unsquared fidelity must be squared before applying this project's infidelity convention.
+
+Start with the [learning guide](learning/README.md) and the [worked controller tutorial](learning/TUTORIAL.md). The [30-milestone map](learning/MILESTONES.md) provides a common route through the whole contribution: **12 background/preliminaries milestones** assemble the states, channels, conservation, accuracy, and information framework; **18 narrative/innovation milestones** connect the active orbit and converse to the finite construction and the optimal leading law. Each milestone states a central question, understanding target, earlier dependencies, conceptual connection, and scientific sources.
+
+Use the selected book alongside the project explanations. The specialist proof route remains available above, and [llms.txt](llms.txt) maps both scientific and learning questions to their authoritative files.
+
 ## Reproduce the finite construction
 
 From the repository root:
